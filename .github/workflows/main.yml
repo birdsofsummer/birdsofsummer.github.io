@@ -7,7 +7,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master    
+    - uses: actions/checkout@v1    
     - name: Checkout
       run: |
         echo 123
