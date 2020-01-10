@@ -1,0 +1,97 @@
+@font-face {
+     font-family: 'lixukexingshu10f2d692441c3e5';
+     src: url('//cdn.webfont.youziku.com/webfonts/nomal/115685/45807/5ab3a119f629d80eb8e651af.gif?r=71850259812');
+     src: url('//cdn.webfont.youziku.com/webfonts/nomal/115685/45807/5ab3a119f629d80eb8e651af.gif?r=71850259812?#iefix') format('embedded-opentype'),
+     url('//cdn.webfont.youziku.com/webfonts/nomal/115685/45807/5ab3a119f629d80eb8e651af.png?r=71850259812') format('woff2'),
+     url('//cdn.webfont.youziku.com/webfonts/nomal/115685/45807/5ab3a119f629d80eb8e651af.bmp?r=71850259812') format('woff'),
+     url('//cdn.webfont.youziku.com/webfonts/nomal/115685/45807/5ab3a119f629d80eb8e651af.jpg?r=71850259812') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+.css10f2d692441c3e5 {
+     font-family: 'lixukexingshu10f2d692441c3e5';
+}
+.color-name{
+	font-family: 'lixukexingshu10f2d692441c3e5';
+	font-size: 1rem;
+	color: #fff;
+	text-align: center;
+}
+#current_color{
+    font-size:5rem;
+}
+section {
+	margin: 1rem 0;
+}
+li{
+      list-style: none; 
+}
+
+.card{
+	position: relative;
+    color:white;
+    cursor: pointer;
+	/*box-shadow: 0 0 4px rgba(0,0,0,.2); */
+}
+.card *{
+    margin:0!important;
+    padding:0!important;
+}
+.search-list {
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+}
+.search-list li{
+   background:yellow;
+   border-radius: 50%;
+   background:#bb963a8c;
+   color:white;
+   cursor:pointer;
+}
+.search:hover,.search:active{
+   mask:url(/images/1.svg);
+   background: #f9d27d;
+   mask-size: cover;
+}
+
+.color-wrapper{
+    transition: all 2s ease-in;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+#color-container{
+    grid-column-start: 1;
+    grid-column-end: 30;
+    grid-gap: 1rem;
+}
+
+.color-item {
+	/* background: yellow; */
+	cursor: pointer;
+    transition:all 0.2s ease-in !important;
+}
+.color-item:hover {
+	opacity: 0.8;
+}
+.color-wrapper *{
+    transition: all 2s ease-in;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+#pinyin{
+    margin:2rem 1rem 0;
+}
+
+#current_hex{
+    font-size:0.7rem;
+}

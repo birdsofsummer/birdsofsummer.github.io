@@ -1,0 +1,235 @@
+const { graphql,buildSchema , GraphQLSchema, GraphQLObjectType, GraphQLString } = require( 'graphql')
+
+
+test2=()=>{
+    var schema = buildSchema(`
+      type Query {
+        hello: String
+      }
+    `);
+
+    var root = {
+        hello: () => 'Hello world!' ,
+        hello1: (x) => x+'ccc',
+    };
+    graphql(schema, '{ hello }', root).then(console.log)
+}
+
+test1=()=>{
+    var schema = new GraphQLSchema({
+      query: new GraphQLObjectType({
+        name: 'RootQueryType',
+        fields: {
+          hello: {
+            type: GraphQLString,
+            resolve() {
+              return 'world';
+            }
+          }
+        }
+      })
+    });
+
+    var query = '{ hello }';
+    var query = '{ boyhowdy }';
+    graphql(schema, query).then(console.log)
+}
+
+
+
+
+
+
+/*
+
+const {
+    BREAK,
+    BreakingChangeType,
+    DEFAULT_DEPRECATION_REASON,
+    DangerousChangeType,
+    DirectiveLocation,
+    FieldsOnCorrectTypeRule,
+    FragmentsOnCompositeTypesRule,
+    GraphQLBoolean,
+    GraphQLDeprecatedDirective,
+    GraphQLDirective,
+    GraphQLEnumType,
+    GraphQLError,
+    GraphQLFloat,
+    GraphQLID,
+    GraphQLIncludeDirective,
+    GraphQLInputObjectType,
+    GraphQLInt,
+    GraphQLInterfaceType,
+    GraphQLList,
+    GraphQLNonNull,
+    GraphQLObjectType,
+    GraphQLScalarType,
+    GraphQLSchema,
+    GraphQLSkipDirective,
+    GraphQLString,
+    GraphQLUnionType,
+    Kind,
+    KnownArgumentNamesRule,
+    KnownDirectivesRule,
+    KnownFragmentNamesRule,
+    KnownTypeNamesRule,
+    LoneAnonymousOperationRule,
+    NoFragmentCyclesRule,
+    NoUndefinedVariablesRule,
+    NoUnusedFragmentsRule,
+    NoUnusedVariablesRule,
+    OverlappingFieldsCanBeMergedRule,
+    PossibleFragmentSpreadsRule,
+    ProvidedRequiredArgumentsRule,
+    ScalarLeafsRule,
+    SchemaMetaFieldDef,
+    SingleFieldSubscriptionsRule,
+    Source,
+    TokenKind,
+    TypeInfo,
+    TypeKind,
+    TypeMetaFieldDef,
+    TypeNameMetaFieldDef,
+    UniqueArgumentNamesRule,
+    UniqueDirectivesPerLocationRule,
+    UniqueFragmentNamesRule,
+    UniqueInputFieldNamesRule,
+    UniqueOperationNamesRule,
+    UniqueVariableNamesRule,
+    ValidationContext,
+    ValuesOfCorrectTypeRule,
+    VariablesAreInputTypesRule,
+    VariablesInAllowedPositionRule,
+    __Directive,
+    __DirectiveLocation,
+    __EnumValue,
+    __Field,
+    __InputValue,
+    __Schema,
+    __Type,
+    __TypeKind,
+    assertAbstractType,
+    assertCompositeType,
+    assertDirective,
+    assertEnumType,
+    assertInputObjectType,
+    assertInputType,
+    assertInterfaceType,
+    assertLeafType,
+    assertListType,
+    assertNamedType,
+    assertNonNullType,
+    assertNullableType,
+    assertObjectType,
+    assertOutputType,
+    assertScalarType,
+    assertSchema,
+    assertType,
+    assertUnionType,
+    assertValidName,
+    assertValidSchema,
+    assertWrappingType,
+    astFromValue,
+    buildASTSchema,
+    buildClientSchema,
+    buildSchema,
+    coerceValue,
+    concatAST,
+    createLexer,
+    createSourceEventStream,
+    defaultFieldResolver,
+    defaultTypeResolver,
+    doTypesOverlap,
+    execute,
+    extendSchema,
+    findBreakingChanges,
+    findDangerousChanges,
+    findDeprecatedUsages,
+    formatError,
+    getDescription,
+    getDirectiveValues,
+    getIntrospectionQuery,
+    getLocation,
+    getNamedType,
+    getNullableType,
+    getOperationAST,
+    getOperationRootType,
+    getVisitFn,
+    graphql,
+    graphqlSync,
+    introspectionFromSchema,
+    introspectionQuery,
+    introspectionTypes,
+    isAbstractType,
+    isCompositeType,
+    isDefinitionNode,
+    isDirective,
+    isEnumType,
+    isEqualType,
+    isExecutableDefinitionNode,
+    isInputObjectType,
+    isInputType,
+    isInterfaceType,
+    isIntrospectionType,
+    isLeafType,
+    isListType,
+    isNamedType,
+    isNonNullType,
+    isNullableType,
+    isObjectType,
+    isOutputType,
+    isRequiredArgument,
+    isRequiredInputField,
+    isScalarType,
+    isSchema,
+    isSelectionNode,
+    isSpecifiedDirective,
+    isSpecifiedScalarType,
+    isType,
+    isTypeDefinitionNode,
+    isTypeExtensionNode,
+    isTypeNode,
+    isTypeSubTypeOf,
+    isTypeSystemDefinitionNode,
+    isTypeSystemExtensionNode,
+    isUnionType,
+    isValidJSValue,
+    isValidLiteralValue,
+    isValidNameError,
+    isValueNode,
+    isWrappingType,
+    lexicographicSortSchema,
+    locatedError,
+    parse,
+    parseType,
+    parseValue,
+    print,
+    printError,
+    printIntrospectionSchema,
+    printLocation,
+    printSchema,
+    printSourceLocation,
+    printType,
+    responsePathAsArray,
+    separateOperations,
+    specifiedDirectives,
+    specifiedRules,
+    specifiedScalarTypes,
+    stripIgnoredCharacters,
+    subscribe,
+    syntaxError,
+    typeFromAST,
+    validate,
+    validateSchema,
+    valueFromAST,
+    valueFromASTUntyped,
+    version,
+    versionInfo,
+    visit,
+    visitInParallel,
+    visitWithTypeInfo}=require('graphql')
+
+
+*/
+

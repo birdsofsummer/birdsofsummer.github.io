@@ -1,0 +1,23 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@dev    
+    - name: Checkout
+    
+    - uses: birdsofsummer/birdsofsummer.github.io@master      
+    - name: Build and Deploy
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: master
+        FOLDER: public
+        BUILD_SCRIPT: npm install && hexo g && hexo d
+      run:  |
+        echo 123
+        npm install && hexo g && hexo d
+        

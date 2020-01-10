@@ -1,0 +1,37 @@
+.grid,[class^=grid]{
+	display: grid;
+}
+.grid-inline{
+    grid-auto-flow: column;
+}
+.grid-0{ grid-template-columns: repeat(0,auto); }
+.grid-1{ grid-template-columns: repeat(1,auto); }
+.grid-2{ grid-template-columns: repeat(2,auto); }
+.grid-3{ grid-template-columns: repeat(3,auto); }
+.grid-4{ grid-template-columns: repeat(4,auto); }
+.grid-5{ grid-template-columns: repeat(5,auto); }
+.grid-6{ grid-template-columns: repeat(6,auto); }
+.grid-7{ grid-template-columns: repeat(7,auto); }
+.grid-8{ grid-template-columns: repeat(8,auto); }
+.grid-9{ grid-template-columns: repeat(9,auto); }
+.grid-10{ grid-template-columns: repeat(10,auto); }
+.grid-11{ grid-template-columns: repeat(11,auto); }
+.grid-12{ grid-template-columns: repeat(12,auto); }
+.grid-13{ grid-template-columns: repeat(13,auto); }
+.grid-14{ grid-template-columns: repeat(14,auto); }
+.grid-15{ grid-template-columns: repeat(15,auto); }
+.grid-16{ grid-template-columns: repeat(16,auto); }
+.grid-17{ grid-template-columns: repeat(17,auto); }
+.grid-18{ grid-template-columns: repeat(18,auto); }
+.grid-19{ grid-template-columns: repeat(19,auto); }
+.grid-20{ grid-template-columns: repeat(20,auto); }
+.grid-21{ grid-template-columns: repeat(21,auto); }
+.grid-22{ grid-template-columns: repeat(22,auto); }
+.grid-23{ grid-template-columns: repeat(23,auto); }
+.grid-24{ grid-template-columns: repeat(24,auto); }
+.grid-25{ grid-template-columns: repeat(25,auto); }
+.grid-26{ grid-template-columns: repeat(26,auto); }
+.grid-27{ grid-template-columns: repeat(27,auto); }
+.grid-28{ grid-template-columns: repeat(28,auto); }
+.grid-29{ grid-template-columns: repeat(29,auto); }
+

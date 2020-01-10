@@ -1,0 +1,641 @@
+[
+  {
+    "id": "e12e1abea58d48ffb3e092fc8f51cb71",
+    "name": "极客秀（第1期）",
+    "href": "http://www.duokan.com/book/42755",
+    "desc": "MIUI极客秀，手机发烧友和数码爱好者大本营，11月栏目精选！",
+    "author": "MIUI",
+    "rate": 856,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p018I62lRry4/89PHJjEMKtZ4bA.jpg!l"
+  },
+  {
+    "id": "0020fdc4d0be11e1b8f300163e0060da",
+    "name": "码农（第1期）",
+    "href": "http://www.duokan.com/book/1362",
+    "desc": "图灵社区第一本电子刊《码农》创刊号！",
+    "author": "图灵社区",
+    "rate": 649,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p011VMUF4qGJ/KCfigQo4C44Lp6.jpg!l"
+  },
+  {
+    "id": "0f81733d7dc843e89eb3173f4543ee04",
+    "name": "码农（第7期）",
+    "href": "http://www.duokan.com/book/40489",
+    "desc": "码农（第7期）：从Python开始。",
+    "author": "图灵社区",
+    "rate": 627,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01FCyYyMz0v/9Vg6OU1cPu7Odv.jpg!l"
+  },
+  {
+    "id": "68a774fc1d8c11e2831100163e0123ac",
+    "name": "码农（第2期）",
+    "href": "http://www.duokan.com/book/10342",
+    "desc": "码农（第2期）：不做二流码农，只看一流《码农》。",
+    "author": "图灵社区",
+    "rate": 524,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01bnnKWMvbE/njtc9Y93XtKEcj.jpg!l"
+  },
+  {
+    "id": "38c7c2fb1923473785207fe2954d3a6c",
+    "name": "极客秀（第2期）",
+    "href": "http://www.duokan.com/book/43427",
+    "desc": "MIUI极客秀12月栏目精选，手机发烧友和数码爱好者大本营！",
+    "author": "MIUI",
+    "rate": 443,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01zhDL3rrJt/3nAsGvOki0t68s.jpg!l"
+  },
+  {
+    "id": "978acd76450c11e29a2b00163e0123ac",
+    "name": "码农（第3期）：开源意味着什么？",
+    "href": "http://www.duokan.com/book/16012",
+    "desc": "码农（第3期）：开源意味着什么？",
+    "author": "图灵社区",
+    "rate": 435,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01Lcdjs7xrY/Q66bO4jWhp07bG.jpg!l"
+  },
+  {
+    "id": "adae3f53e6eb4b5c9ba43962ce169535",
+    "name": "码农（第5期）",
+    "href": "http://www.duokan.com/book/27262",
+    "desc": "码农（第5期）：App创富传奇。",
+    "author": "图灵社区",
+    "rate": 321,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01K4Vy0rfj7/T0366dB6feua4Q.jpg!l"
+  },
+  {
+    "id": "7106e4f4521d40d8954310c313bb2067",
+    "name": "码农（第8期）",
+    "href": "http://www.duokan.com/book/42169",
+    "desc": "码农（第8期）：码农的面试。",
+    "author": "图灵社区",
+    "rate": 318,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01fQOkAmoOc/7VxFP7fyTfPIM0.jpg!l"
+  },
+  {
+    "id": "ca127c57533b4f4b968d04e92e4900e8",
+    "name": "码农（第9期）",
+    "href": "http://www.duokan.com/book/43613",
+    "desc": "码农（第9期）：你不知道的Mac技巧。",
+    "author": "图灵社区",
+    "rate": 295,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01yCRP7Iy0X/JJkjndvNpa42cK.jpg!l"
+  },
+  {
+    "id": "1482a26a80bb11e2afd200163e0123ac",
+    "name": "码农（第4期）",
+    "href": "http://www.duokan.com/book/23727",
+    "desc": "码农（第4期）：活的信息。",
+    "author": "图灵社区",
+    "rate": 275,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01pHAtr7cjd/MdzE91nHar5oMC.jpg!l"
+  },
+  {
+    "id": "61d3d89a0be144d0a1b7420eefc5cd11",
+    "name": "码农（第6期）",
+    "href": "http://www.duokan.com/book/37461",
+    "desc": "码农（第6期）：网络“安全”。",
+    "author": "图灵社区",
+    "rate": 267,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01JIhaD18pL/06wWVQO5d51IDq.jpg!l"
+  },
+  {
+    "id": "95c5ae1b232240cfb833598935a54962",
+    "name": "极客秀（第5期）",
+    "href": "http://www.duokan.com/book/46056",
+    "desc": "MIUI极客秀2014年3月栏目精选，数码爱好者大本营！",
+    "author": "MIUI",
+    "rate": 265,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01NLeYOG2WB/z49rlh7g4z5lPZ.jpg!l"
+  },
+  {
+    "id": "be206c3802ba46278376fd6416332915",
+    "name": "码农：2014新年特刊",
+    "href": "http://www.duokan.com/book/44737",
+    "desc": "码农2014新年特刊：新的开始，重整旗鼓。",
+    "author": "图灵社区",
+    "rate": 221,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01JFX4OT2zI/ZtHL3yhLWjuHTd.jpg!l"
+  },
+  {
+    "id": "498de9c698f2443fb76a4e41b992abab",
+    "name": "码农（第12期）",
+    "href": "http://www.duokan.com/book/48227",
+    "desc": "码农（第12期）：JavaScript第二季。\n",
+    "author": "图灵社区",
+    "rate": 216,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01J9lUuiHa8/IUcKPK3GlZ75jF.jpg!l"
+  },
+  {
+    "id": "308daf1bd2cb4d5990310837c73bd979",
+    "name": "码农（第11期）",
+    "href": "http://www.duokan.com/book/46334",
+    "desc": "码农（第11期）：设计者的品味。",
+    "author": "图灵社区",
+    "rate": 200,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01n87hRAiCl/IpeLNXKbgEeSNb.jpg!l"
+  },
+  {
+    "id": "30b00e8cec7b48efaf1d59a41b881efd",
+    "name": "雪球专刊·玩转量化投资",
+    "href": "http://www.duokan.com/book/106009",
+    "desc": "当了一个月量化码农，六点收获；量化投资，满仓还是半仓？",
+    "author": "雪球用户",
+    "rate": 185,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01oHpQPrH4V/NSAgnlRRRUM2Fd.jpg!l"
+  },
+  {
+    "id": "afc71420517f44e2869436e0dbb1ca2a",
+    "name": "码农（第14期）",
+    "href": "http://www.duokan.com/book/63338",
+    "desc": "码农（第14期）：介绍Web APP背后的基本原理",
+    "author": "图灵社区",
+    "rate": 168,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01wzn8Qeyas/LbTqEdcOOWU2BR.jpg!l"
+  },
+  {
+    "id": "ebf2915881c944cd9e5110600804f9d8",
+    "name": "雪球专刊·稳健投资之道",
+    "href": "http://www.duokan.com/book/97808",
+    "desc": "稳健投资之道：股债动态平衡&四招教你打开通往财富的密码",
+    "author": "雪球用户",
+    "rate": 161,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01PkCNrI7r7/USI0s3l8iiqiIW.jpg!l"
+  },
+  {
+    "id": "9f088aace006478a8473e01a9b49b59b",
+    "name": "码农（第15期）",
+    "href": "http://www.duokan.com/book/72464",
+    "desc": "码农（第15期）：听CTO们讲故事。",
+    "author": "图灵社区",
+    "rate": 123,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p014XpkTz7D8/kNBk7Q9Dy7JtMT.jpg!l"
+  },
+  {
+    "id": "40fe74bfadc44f74a4c220defd39431b",
+    "name": "架构师（2015年02月）",
+    "href": "http://www.duokan.com/book/85887",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 122,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p010jYY4dOLP/jz6gvN0cpToSJE.jpg!l"
+  },
+  {
+    "id": "4ed29350c85f45e38f8896e392ab0cf8",
+    "name": "码农增刊 码农好爸爸",
+    "href": "http://www.duokan.com/book/78742",
+    "desc": "作为一名码农好爸爸，你得有技巧地培养孩子们对于编程的兴趣！",
+    "author": "码农增刊",
+    "rate": 113,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01MFRLXOxHe/9eyCBvfBLzxbSe.jpg!l"
+  },
+  {
+    "id": "41a12bcfde034b69a92e05e47c0319ba",
+    "name": "码农·码农论剑（第22期）",
+    "href": "http://www.duokan.com/book/102747",
+    "desc": "码农论剑，说说那些梦寐以求的编程语言！",
+    "author": "图灵社区",
+    "rate": 103,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01mAXH8qP8m/Yu91cM2p66miil.jpg!l"
+  },
+  {
+    "id": "63f684588b214357b76c4309a37d17ef",
+    "name": "码农（第19期）",
+    "href": "http://www.duokan.com/book/93647",
+    "desc": "码农19期：说说Android系统，让你成为Android好手！",
+    "author": "图灵社区",
+    "rate": 98,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01xRCpnwWGn/YYz86O0vZT704D.jpg!l"
+  },
+  {
+    "id": "af273508f4a34ed08c1fdc43c5a8891a",
+    "name": "码农（第18期）",
+    "href": "http://www.duokan.com/book/90430",
+    "desc": "码农18期：汇集Node核心开发者、Node.js布道者的精彩文章！",
+    "author": "图灵社区",
+    "rate": 96,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01UYxPpI211/GaRAzt3NB2ntBW.jpg!l"
+  },
+  {
+    "id": "b2b07ba1a2e849c6bfbc1e6255c844c7",
+    "name": "架构师（2015年03月）",
+    "href": "http://www.duokan.com/book/86402",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 79,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01ueTDURGxX/v24LIPiaqzTmlG.jpg!l"
+  },
+  {
+    "id": "577ff61a43d04dd39b42c73f7bfd3c02",
+    "name": "架构师（2015年08月）",
+    "href": "http://www.duokan.com/book/95279",
+    "desc": "本期内容推荐：Docker背后的容器集群管理——从Borg到Kubernetes（一），解析微服务架构（二）微服务架构综述，多范式编程语言－以Swift为例，Oracle专家谈MySQL Cluster如何支持200M的QPS，杂谈：创业公司的产品开发与团队管理\n\n架构师 2015年08月刊\n\n杂志简介：\n《架构师》《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。\n\n主要内容：\n本期内容推荐：Docker背后的容器集群管理——从Borg到Kubernetes（一），解析微服务架构（二）微服务架构综述，多范式编程语言－以Swift为例，Oracle专家谈MySQL Cluster如何支持200M的QPS，杂谈：创业公司的产品开发与团队管理\n\n具体栏目：\n\n本期主要内容\nDocker背后的容器集群管理——从Borg到Kubernetes（一）：?2015年4月，传闻许久的Borg论文总算出现在了Google Research的页面上。虽然传言Borg作为G家的“老”项目一直是槽点满满，而且本身的知名度和影响力也应该比不上当年的“三大论文”，但是同很多好奇的小伙伴一样，笔者还是饶有兴趣地把这篇“非典型”论文拜读了一番。\n?\n解析微服务架构（二）微服务架构综述：?微服务架构（Microservice Architect）是一种架构模式，它提倡将单块架构的应用划分成一组小的服务，服务之间互相协调、互相配合，为用户提供最终价值。\n?\n多范式编程语言——以Swift为例：?Swift即支持面向对象编程范式，也支持函数式编程范式，同时还支持泛型编程。Swift支持多种编程范式是由它的目标决定的。\n?\nOracle专家谈MySQL Cluster如何支持200M的QPS：?Andrew Morgan是Oracle MySQL首席产品经理。 近日，他撰文介绍了MySQL Cluster如何支持200M的QPS。\n?\n杂谈：创业公司的产品开发与团队管理：?创业公司由于管理层次简单，很少受到官僚作风的困扰，但也不能想当然地认为万事大吉，高枕无忧了。其实创业公司也有创业公司的局限性，这些局限性常常被忽略，从而影响到产品的开发。",
+    "author": "《架构师》编辑部",
+    "rate": 53,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01dfuPy0qmw/JagPJtbpirzoiL.jpg!l"
+  },
+  {
+    "id": "c353ed4eba3c43cebd76779b7b8c6a7c",
+    "name": "架构师（2015年07月）",
+    "href": "http://www.duokan.com/book/93343",
+    "desc": "本期内容推荐：Docker、CoreOS握手言和，共同制定容器标准，WWDC总结：开发者需要知道的iOS 9 SDK新特性，NGINX引入线程池 性能提升9倍，深入浅出ES6：生成器 Generators，深入浅出React：React开发神器Webpack，姜宁谈红帽绩效考核：不关心员工具体做什么\n\n架构师 2015年07月刊\n\n杂志简介：\n《架构师》《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。\n主要内容：\nDocker、CoreOS握手言和，共同制定容器标准，WWDC总结：开发者需要知道的iOS 9 SDK新特性，NGINX引入线程池 性能提升9倍，深入浅出ES6：生成器 Generators，深入浅出React：React开发神器Webpack，姜宁谈红帽绩效考核：不关心员工具体做什么\n\n具体栏目：\n\n目录\n热点 | Hot\nDocker、CoreOS握手言和，共同制定容器标准\nWWDC总结：开发者需要知道的iOS 9 SDK新特性\n推荐文章｜Article\nNGINX引入线程池 性能提升9倍\nFacebook如何向十亿人推荐东西\n大数据平台架构实践\n专题｜Topic\n京东618：Docker扛大旗，弹性伸缩成重点\n深入浅出ES6（三）：生成器 Generators\n深入浅出React（二）：React开发神器Webpack\n观点｜Opinion\n姜宁谈红帽绩效考核：不关心员工具体做什么\n冯?诺依曼计算机将渐行渐远？\n封面植物",
+    "author": "《架构师》编辑部",
+    "rate": 41,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p01VWJfOlLEz/tXCcCYwIOTlfj2.jpg!l"
+  },
+  {
+    "id": "4c1a5d456abc4ade88ad416bc985cdf4",
+    "name": "架构师（2016年01月）",
+    "href": "http://www.duokan.com/book/102900",
+    "desc": "Google确认下一个Android版本将不会使用Oracle的Java API，转而使用开源的OpenJDK替代，谈谈那令你永生难忘的编程之路，微服务与持续交付，梁胜：做云计算，如何才能超越AWS？ SpeedyCloud研发总监李孟：不要让底层细节被上层打散，图像验证码和大规模图像识别技术，锤子手机发布会提到的 OpenResty 是什么？\n架构师 2016年1月刊\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 38,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Ie0bm8mWg/PF5qr5f3iB5xfg.jpg!l"
+  },
+  {
+    "id": "ef2189181ef1464dba40b5fa6539f60f",
+    "name": "架构师（2016年03月）",
+    "href": "http://www.duokan.com/book/105012",
+    "desc": "2016年会成为Java EE微服务年吗？Netflix Spinnaker：实现全局部署，.NET开源现状，Oracle宣布：2017年将废弃Java浏览器插件，针对架构设计的几个痛点，我总结出的架构原则和模式，问答系统的前生今世，每个架构师都应该研究下康威定律，电商网站的初期技术选型\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 30,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01GaF1Siusd/gQAK9Yftxhau7E.jpg!l"
+  },
+  {
+    "id": "53eef6e8c27246f6bdcfb927d491705f",
+    "name": "架构师（2016年02月）",
+    "href": "http://www.duokan.com/book/103645",
+    "desc": "OpenJDK将对Android开发产生怎样的影响？，Python将迁移到GitHub，鏖战双十一-阿里直播平台面临的技术挑战，从无到有：微信后台系统的演进之路，推荐系统和搜索引擎的关系，关于云迁移的经验总结。\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 29,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ILRNfC4Tr/CHTQxm91kmpd9H.jpg!l"
+  },
+  {
+    "id": "ea30869980b44b038737babb29e106bc",
+    "name": "架构师（2016年05月）",
+    "href": "http://www.duokan.com/book/110487",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 28,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01dgqg4eRV6/PLn8SkBza2VAFC.jpg!l"
+  },
+  {
+    "id": "c2eac5165e2b4b4dbc1dfcb1b83121cf",
+    "name": "架构师特刊：微服务与DevOps技术内参",
+    "href": "http://www.duokan.com/book/128396",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 27,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01I6JPb6w7M/AaCvKSlRiA9l3a.jpg!l"
+  },
+  {
+    "id": "dcfb0828287447c799001533124500ed",
+    "name": "架构师（2016年11月）",
+    "href": "http://www.duokan.com/book/122698",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 26,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Ds7g0dGyi/A1LalfWeDitueg.jpg!l"
+  },
+  {
+    "id": "21c20c05fa9b4c55a6bc2f8ba767ab9d",
+    "name": "架构师（2016年09月）",
+    "href": "http://www.duokan.com/book/119020",
+    "desc": "怎样打造一个分布式数据库，10亿级流数据交互查询，为什么抛弃MySQL选择VoltDB，从单体架构迁移到微服务，8个关键的思考、实践和经验，50天10万行代码，一号专车系统重构细节回顾，京东前端：三级列表页持续架构优化，怎样才能叫高级程序员。\n\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。《架构师》是“InfoQ中文站每月精选”，希望我们的读者在没有网络的情况下，依然能浏览到InfoQ中文站的精华内容。",
+    "author": "《架构师》编辑部",
+    "rate": 26,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01IThMhzJzm/Z7ASpnb1R0wdQ2.jpg!l"
+  },
+  {
+    "id": "204a3a0a953147dc84b03f5508c371e2",
+    "name": "架构师（2016年08月）",
+    "href": "http://www.duokan.com/book/116380",
+    "desc": "专访吕毅：链家网技术架构的演进之路，专访蘑菇街七公：25倍增长远非极限，优化需要偏执狂，为什么Android开发者应该使用FlatBuffers替代JSON？我为什么选择Angular 2？IBM、Google、Oracle三巨头的公有云之殇。\n\n杂志简介：\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。《架构师》是“InfoQ中文站每月精选”，希望我们的读者在没有网络的情况下，依然能浏览到InfoQ中文站的精华内容。",
+    "author": "《架构师》编辑部",
+    "rate": 24,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01yKmcOb2gH/0lavEZ5eDWH9x4.jpg!l"
+  },
+  {
+    "id": "ecb2566def5045af9c6ab637fb80189f",
+    "name": "架构师（2016年12月）",
+    "href": "http://www.duokan.com/book/126375",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 23,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01g0iPAgzQ5/TLnDT8byxzhxFP.jpg!l"
+  },
+  {
+    "id": "efd799cfa44345ec840f1f2c271a1e00",
+    "name": "架构师（2016年07月）",
+    "href": "http://www.duokan.com/book/114636",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 22,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01w1Qm17izZ/jFdoxK92SSsul6.jpg!l"
+  },
+  {
+    "id": "dd1d71f1b789461d998a032a96a64855",
+    "name": "架构师（2017年02月）",
+    "href": "http://www.duokan.com/book/137701",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 22,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ItfGnEjhw/Knkbkz3AUa9bJC.jpg!l"
+  },
+  {
+    "id": "91f880812e5a4362a86fd47aa6860907",
+    "name": "架构师（2017年03月）",
+    "href": "http://www.duokan.com/book/137027",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 21,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01TLACmV3aK/HhSJbz2s7p14BO.jpg!l"
+  },
+  {
+    "id": "db04b7c372694ef087b3cf071c622143",
+    "name": "架构师（2015年12月）",
+    "href": "http://www.duokan.com/book/101779",
+    "desc": "本期主要内容：微信斑马系统：微信朋友圈广告背后的利器，Spark和Hadoop孰优孰劣，通过大量测试来构建测试系统，实施微服务需要哪些基础框架，重建还是重构，Medium开发团队谈架构设计，被误解的MVC和被神化的MVVM，深入了解IAM和访问控制\n架构师 2015年12月刊\n\n杂志简介：\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。\n\n主要内容：\n本期主要内容：微信斑马系统：微信朋友圈广告背后的利器，Spark和Hadoop孰优孰劣，通过大量测试来构建测试系统，实施微服务需要哪些基础框架，重建还是重构，Medium开发团队谈架构设计，被误解的MVC和被神化的MVVM，深入了解IAM和访问控制\n\n具体栏目：\n\n卷首语\n大规模弹性平台架构设计\n\n冯是聪?北京明略软件系统有限公司联合创始人兼CTO\n\n在谈大规模弹性架构设计之前，先聊聊两个真实的场景:\n场景一：春运火车票抢票大战。春节一直是中国最重要的传统节日，每个中国人都期盼着在这个阖家欢乐的时刻，能够相聚在一起共享天伦之乐，于是就有了中国特色的春运，外媒称之为“人类历史上规模最大的周期性迁徙”。作为春运火车票售票系统，因为峰值访问量过于庞大（2014年尖峰日PV达到144亿次），2014年以前12306系统动不动就瘫痪，12306也因此一直受到诟病，相信大多数春运期间购买过火车票的人都记忆犹新。2015年以后，尽管尖峰日PV达到令人恐怖的297亿次，但是由于系统经过了升级，系统瘫痪的情况大大减少。\n场景二：双十一购物狂欢节。刚刚落幕的2015年双十一购物狂欢节，阿里巴巴集团创下了912亿的骄人成绩，支付宝支撑住了8.59万笔/秒的交易量。\n\n上面两个案例中，如果我们为了保证系统的高可用性，按着每天访问的峰值作为标准来设计系统，绝大数情况下访问量较低时，无论是硬件资源还是网络带宽等资源都会造成巨大的浪费。那么如何从技术上解决这个问题呢？答案是大规模弹性架构设计。\n\n大规模弹性架构的主要设计目标是系统的高可用性和高扩展性：根据系统的实际需要，系统自动弹性分配资源。在需求量大，比如峰值的时候，系统自动调配足够的资源；在访问量小，系统自动释放出部分的资源，从而实现资源的按需分配。\n\n那么大规模弹性架构的基本工作原理是什么？其主要是利用高性能虚拟化技术，实现了计算、存储和网络资源的统一调度和弹性分配。限于篇幅，这里仅举两个具体的技术：\n\n1.实现动态部署。为了应对突发峰值访问量或者可能的网络攻击，需要在应用服务器内部部署一些监控程序，由主控程序判断当前整个集群的负载情况，自动增加或者减少服务节点，并且自动部署应用程序，从而从容应对突增的业务流量。\n2.实现故障自动恢复。当一台物理机损坏时，系统需要自动监测到硬件故障，并且在第一时间内，把云服务器迁移到新的宿主机上，同时硬盘数据需要保持最后一刻的状态。数据安全是第一位，因为数据始终面临误删文件、病毒破坏、程序写错、硬件损坏等种种可能的风险。在弹性计算平台上，需要利用快照功能自动完成数据的备份。\n\n最后，简单聊聊大规模弹性平台架构设计变化的趋势。\n\n第一，弹性平台架构平台的设计将会愈发智能。系统将会自动收集愈来愈多的用户访问数据，跟据历史访问规律，自动地预测系统峰值的变化趋势，峰值的预估将愈加精准。简单设想一下，如果系统已有的全部资源都不能满足峰值的需求，弹性设计已经没有意义了，这时候需要提前做准预估，并采取相应的措施，并假设如果超过峰值，如何应对。\n第二，以容器技术为代表的轻虚拟化技术的迅猛发展，将会进一步促进大规模弹性平台架构设计的进步。\n第三，弹性计算平台将需要考虑更加安全的容灾方案。目前常见的单个物理位置的系统，始终会面临诸如地震、火灾等不可抗力的威胁，所以需要有更加安全的容灾方案。比如常见的有跨机房异地容灾，目前Google的核心数据已经实现了跨越5大洲的异地备份容灾。\n\n目录\n热点｜Hot\n斑马系统：微信朋友圈广告背后的利器\nSpark和Hadoop，孰优孰劣？\n推荐文章｜Article\n通过大量测试来构建测试系统\n实施微服务，我们需要哪些基础框架？\n专题｜Topic\n重建还是重构？\nMedium开发团队谈架构设计\n观点｜Opinion\n被误解的MVC和被神化的MVVM\n特别专栏 | Column\n深入了解IAM和访问控制",
+    "author": "《架构师》编辑部",
+    "rate": 20,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/s010/p0186qLGET1Y/QQUWZ4P7mYRH2n.jpg!l"
+  },
+  {
+    "id": "6db17d678acd425b955c439ee30cf665",
+    "name": "架构师（2017年12月）",
+    "href": "http://www.duokan.com/book/168951",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 18,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01cp8uZWgVr/IFulknwEan6fv1.jpg!l"
+  },
+  {
+    "id": "f02b38e71f184116b40d34378d2dfcbd",
+    "name": "架构师（2017年05月）",
+    "href": "http://www.duokan.com/book/140797",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 18,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01lMQKPRCoV/iyfkOUHubXPzZq.jpg!l"
+  },
+  {
+    "id": "ec09dce692274e52ac087f1b8ac12035",
+    "name": "架构师（2017年06月）",
+    "href": "http://www.duokan.com/book/146200",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 18,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01jHAfH7p8L/cIdRh5fbwFnXHE.jpg!l"
+  },
+  {
+    "id": "801b3190bf474ec7bdf6c279cd019c37",
+    "name": "架构师（2016年10月）",
+    "href": "http://www.duokan.com/book/120221",
+    "desc": "架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 18,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p0106UNBUjCR/9xu24AdtKjvL8z.jpg!l"
+  },
+  {
+    "id": "48984a98f93b4dc38a1c274a09c8fa52",
+    "name": "架构师（2017年07月）",
+    "href": "http://www.duokan.com/book/147648",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 17,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01bpf8DAwlg/f9huI2WEKaPEdQ.jpg!l"
+  },
+  {
+    "id": "0ba7750ea22a49a19eb44cc1b128c5af",
+    "name": "架构师（2016年04月）",
+    "href": "http://www.duokan.com/book/110482",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 17,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01RFIsY6Wqj/ncG8V6dIswmvii.jpg!l"
+  },
+  {
+    "id": "9e811d31257b42f1ac105e90e90667a1",
+    "name": "架构师（2017年01月）",
+    "href": "http://www.duokan.com/book/129452",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。",
+    "author": "《架构师》编辑部",
+    "rate": 16,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Q1h3cNIiy/AR4BZW1DmS9SXH.jpg!l"
+  },
+  {
+    "id": "a1b6b0590b624619ab59fd5c6833a4d3",
+    "name": "架构师（2017年09月）",
+    "href": "http://www.duokan.com/book/155070",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 15,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01j5AISxQL6/XqOK90MCkg04HY.jpg!l"
+  },
+  {
+    "id": "c305379910c3462b8a4eec381f38d37c",
+    "name": "架构师（2018年03月）",
+    "href": "http://www.duokan.com/book/171195",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 15,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01cWpjmy7Mv/e9JRVSQS37fqag.jpg!l"
+  },
+  {
+    "id": "de738d4913184ca8bb7381983ca85e6d",
+    "name": "架构师（2018年04月）",
+    "href": "http://www.duokan.com/book/174253",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 15,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ta4ovklfr/jkWhqoeoMWGwK1.jpg!l"
+  },
+  {
+    "id": "c00f5e7fdace4d328fe41bde59c40c21",
+    "name": "架构师（2018年05月）",
+    "href": "http://www.duokan.com/book/174252",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 13,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01T3WyZuDTm/EGimmpHNwXOy0J.jpg!l"
+  },
+  {
+    "id": "210041f202e14e589eff9264c5f2da63",
+    "name": "架构师（2017年10月）",
+    "href": "http://www.duokan.com/book/158634",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 13,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01FsSYauWGB/jrY2oeUGXUHEd2.jpg!l"
+  },
+  {
+    "id": "3c5d0baaa01f414aa509eba20bbf6640",
+    "name": "架构师（2018年01月）",
+    "href": "http://www.duokan.com/book/170616",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 13,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p010ZnN5Wxw2/SNqRJteyzhsZX6.jpg!l"
+  },
+  {
+    "id": "fc0dc2a6bdc248d5955f5be00984ca94",
+    "name": "架构师（2018年02月）",
+    "href": "http://www.duokan.com/book/170617",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 12,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01HcIPTzlga/rrfOYdsedHB4rG.jpg!l"
+  },
+  {
+    "id": "80fdde4bdb4645b7b8ea022998e774bf",
+    "name": "架构师（2017年04月）",
+    "href": "http://www.duokan.com/book/140605",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 12,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01hdp7ykI1R/eqL0Qs9EGzMKaE.jpg!l"
+  },
+  {
+    "id": "95125f6467e74d909867ed010eeb74e9",
+    "name": "架构师（2016年06月）",
+    "href": "http://www.duokan.com/book/113032",
+    "desc": "本期主要内容：谈谈后端业务系统的微服务化改造，新浪微博混合云架构实践挑战之不可变基础设施，分布式MySQL集群方案的探索与思考，为什么我不再使用MVC框架，AWS S3：不仅仅是存储\n《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物。《架构师》是“InfoQ中文站每月精选”，希望我们的读者在没有网络的情况下，依然能浏览到InfoQ中文站的精华内容。",
+    "author": "《架构师》编辑部",
+    "rate": 12,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p0104T8f1C7R/4tLcDPXs2MPruv.jpg!l"
+  },
+  {
+    "id": "a3685d990ae7419799456781c55b47d3",
+    "name": "架构师（2017年08月）",
+    "href": "http://www.duokan.com/book/151857",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 10,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01l40KOzjPR/0haMWkyeMGFQfP.jpg!l"
+  },
+  {
+    "id": "890236e589da467c81f487a461262a57",
+    "name": "架构师（2019年02月）",
+    "href": "http://www.duokan.com/book/183487",
+    "desc": "InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 9,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01xmopDkSr5/QUq59HLSbWvM3Z.jpg!l"
+  },
+  {
+    "id": "81b0cbb790704a34b3a439aca933d8fa",
+    "name": "AI前线（2019年1月）",
+    "href": "http://www.duokan.com/book/182529",
+    "desc": "InfoQ中文站推出的电子刊物。",
+    "author": "InfoQ中文站",
+    "rate": 9,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Xt9LQIKaC/iPYniRliTrh0E1.jpg!l"
+  },
+  {
+    "id": "993486a4d2e347b6ab4c79abe2d6555d",
+    "name": "架构师（2017年11月）",
+    "href": "http://www.duokan.com/book/170618",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物…",
+    "author": "《架构师》编辑部",
+    "rate": 9,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ulwyIPJDL/ypFNWvIY0edIQy.jpg!l"
+  },
+  {
+    "id": "674ec8ae9ada4b489bb6f174e00ca190",
+    "name": "AI前线（2018年10月）",
+    "href": "http://www.duokan.com/book/183489",
+    "desc": "InfoQ中文站推出的电子刊物。",
+    "author": "InfoQ中文站",
+    "rate": 7,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p010iSxJkcnZ/HjRELC1NiOnYpp.jpg!l"
+  },
+  {
+    "id": "9ac0187c41aa438887db5fc9d78de884",
+    "name": "架构师（2018年11月）",
+    "href": "http://www.duokan.com/book/180827",
+    "desc": "InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 7,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01sZI2ZGNQ0/Bf5U6dbE6cXS2R.jpg!l"
+  },
+  {
+    "id": "a07ab6035acf42a8b4c16b36944b9402",
+    "name": "架构师（2018年10月）",
+    "href": "http://www.duokan.com/book/180826",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 7,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01Kjhhy1ZK6/E4VhrwbGfocYLO.jpg!l"
+  },
+  {
+    "id": "0b5b935f435348e380fd6a6823c886b7",
+    "name": "架构师（2019年03月）",
+    "href": "http://www.duokan.com/book/183488",
+    "desc": "InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 6,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01dZVPuMtYv/tn360WfCpVAj6L.jpg!l"
+  },
+  {
+    "id": "67d22b332baa44fa9c19dcc9721da6ae",
+    "name": "架构师（2018年6月）",
+    "href": "http://www.duokan.com/book/180825",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 6,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01OjloSt71D/NL5HfJi1fHz583.jpg!l"
+  },
+  {
+    "id": "1b1f5087cdda46d19fb071a006cc4639",
+    "name": "架构师（2018年8月）",
+    "href": "http://www.duokan.com/book/180823",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 6,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01KsgL3wV8C/tgB0zbddegFL7P.jpg!l"
+  },
+  {
+    "id": "352be1109a924ff3be278604306b9443",
+    "name": "架构师（2018年9月）",
+    "href": "http://www.duokan.com/book/180781",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 6,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01FeTRN0Vli/90fhE8tBJ4I9EM.jpg!l"
+  },
+  {
+    "id": "0273d51cd1184f46bac5c71b8993e9ab",
+    "name": "架构师（2019年01月）",
+    "href": "http://www.duokan.com/book/183486",
+    "desc": "InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 5,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01ZpHveI9jU/jPgOfz2BWvddXF.jpg!l"
+  },
+  {
+    "id": "3aaabb8430fe47de9fb5320b45305ab0",
+    "name": "架构师（2018年12月）",
+    "href": "http://www.duokan.com/book/181736",
+    "desc": "InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 5,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01hgRl25g50/aI5GR8Hsycbtov.jpg!l"
+  },
+  {
+    "id": "d43333a577d44168821aad7fe09cff84",
+    "name": "架构师（2018年7月）",
+    "href": "http://www.duokan.com/book/180822",
+    "desc": "《架构师》月刊是由InfoQ中文站针对高级技术开发和管理人员所推出的电子刊物",
+    "author": "《架构师》编辑部",
+    "rate": 5,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01tjjsm4IBC/T0mxoDBY9Zc3O0.jpg!l"
+  },
+  {
+    "id": "9a99cd420c294f1f95e7eb6c999beb95",
+    "name": "AI前线（2019年2月）",
+    "href": "http://www.duokan.com/book/183485",
+    "desc": "InfoQ中文站推出的电子刊物。",
+    "author": "InfoQ中文站",
+    "rate": 3,
+    "cover": "http://cover.read.duokan.com/mfsv2/download/fdsc3/p01127cj3zZd/goJmAHX0bCVDGf.jpg!l"
+  }
+]

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            display:grid;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display:grid;
+            grid-row-gap: 4px;
+        }
+        .g-2{
+            padding: 1em;
+        }
+    
+    </style>
+</head>
+<body>
+<section class="g-2">
+
+<form action="action_page.php" method="post" onsubmit1="return false;">
+    <fieldset>
+        <legend>Personal information:</legend>
+    <input type="text" name="root" placeholder="root"> 
+    <input type="text" name="password" placeholder="password"> 
+    <input type="text" name="age" placeholder="age"> 
+    <select name="city">
+        <option value="sz">sz</option>
+        <option value="zz">zz</option>
+    </select>
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <p>
+        <label for="browser">浏览器</label>
+        <input type="radio" name="browser" value="Internet Explorer" />IE
+        <input type="radio" name="browser" value="Firefox" />Firefox
+        <input type="radio" name="browser" value="Netscape" />Netscape
+        <input type="radio" name="browser" value="Opera" />Opera
+
+    </p>
+    </fieldset>
+    <fieldset>
+        <legend>message</legend>
+        <textarea name="message" rows="10" cols="100"> </textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>message</legend>
+    <input list="browsers" name="browser1">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="number" name="points" min="0" max="100" step="10" value="30">
+    Quantity (between 1 and 5):
+    <input type="number" name="quantity" min="1" max="5">
+   Select your favorite color:
+    <input type="color" name="favcolor">
+    <input type="range" name="points" min="0" max="10">
+
+    </fieldset>
+    <fieldset>
+    <legend>date</legend>
+    Enter a date after 2000-01-01:
+    <input type="date" name="bday" min="2000-01-02" max="2979-12-31"> <br>
+ 
+    Birthday (month and year):
+    <input type="month" name="bdaymonth"><br>
+    Select a week:
+    <input type="week" name="week_year"><br>
+
+    Select a time:
+    <input type="time" name="usr_time"><br>
+
+    Birthday (date and time):
+    <input type="datetime" name="bdaytime">
+
+    Birthday (date and time):
+    <input type="datetime-local" name="bdaytime1">
+    E-mail:
+    <input type="email" name="email">
+    Search Google:
+    <input type="search" name="googlesearch">
+    Telephone:
+    <input type="tel" name="usrtel">
+    Add your homepage:
+    <input type="url" name="homepage">
+    </fieldset>
+
+<fieldset>
+    Select images: <input type="file" name="img" multiple>
+    emails:<input type="email" name="emails" multiple>
+</fieldset>
+
+<fieldset>
+    <input type="image" src="img_submit.gif" alt="111" width="48" height="48">
+    <input type="submit" value="提交">
+    <input type="submit" formaction="demo_admin.asp" formmethod="get"  formtarget="_blank"  value="Submit as admin">
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</fieldset>
+ </form>
+</section>
+</body>
+<script src="/form.js"> </script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div>
+        hello world
+    </div>
+    <p id="info"></p>
+    <script>
+        var infoShow = document.querySelector('#info');
+        var se = new EventSource('http://localhost:9111/es');
+        se.addEventListener('test',function(e){
+            infoShow.textContent += e.data+'\n';
+        });
+        se.addEventListener('error',function(e){
+            console.log(e);
+        })
+    </script>
+</body>
+</html>
