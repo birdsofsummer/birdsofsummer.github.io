@@ -7,17 +7,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@dev    
+    - uses: actions/checkout@master    
     - name: Checkout
-    
-    - uses: birdsofsummer/birdsofsummer.github.io@master      
+
     - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master 
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: master
+        BRANCH: dev
         FOLDER: public
-        BUILD_SCRIPT: npm install && hexo g && hexo d
-      run:  |
-        echo 123
-        npm install && hexo g && hexo d
-        
+        BUILD_SCRIPT: npm i -g hexo && npm install && hexo generate
