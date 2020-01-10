@@ -18,4 +18,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: dev
         FOLDER: public
-        BUILD_SCRIPT: npm i -g hexo && npm install && hexo generate
+        BUILD_SCRIPT: sudo npm install hexo-cli -g &&  npm install && hexo generate
