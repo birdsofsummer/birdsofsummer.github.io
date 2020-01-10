@@ -9,6 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@master    
     - name: Checkout
+      run: |
+        echo 123
 
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master 
