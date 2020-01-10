@@ -12,6 +12,7 @@ jobs:
       run: |
         echo 123
         mkdir public
+        ls
 
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master 
@@ -19,4 +20,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: dev
         FOLDER: public
-        BUILD_SCRIPT: npm install hexo-cli -g &&  npm install && hexo g 
+        BUILD_SCRIPT: npm install hexo-cli -g &&  npm install && hexo g && ls
