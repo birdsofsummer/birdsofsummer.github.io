@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <!--base target="_blank" /-->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="referrer" content="never">
+  <meta name="keywords" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/346/346195.png" type="image/x-icon">
+
+
+  <link href="https://spin.js.org/spin.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+<link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.css" rel="stylesheet">
+  <link href="/css/grid.css" type="text/css" rel="stylesheet">
+  <link href="/css/blog.css" type="text/css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdn.bootcss.com/localforage/1.7.3/localforage.min.js"></script>
+  <script src="https://cdn.bootcss.com/ramda/0.26.1/ramda.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.16.1/lodash.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.bootcss.com/superagent/4.1.0-beta.1/superagent.min.js"></script>
+  <script src="https://cdn.bootcss.com/rxjs/6.5.2/rxjs.umd.min.js"></script>
+  <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.js"></script>
+  
+  <script src="https://cdn.bootcss.com/pixi.js/5.0.4/pixi.min.js"></script>
+  <script src="https://cdn.bootcss.com/d3/5.9.7/d3.min.js"></script>
+  <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+  <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+  <script src="https://cdn.bootcss.com/push.js/1.0.9/push.min.js"></script>
+  <script src="https://cdn.bootcss.com/linq.js/2.2.0.2/linq.min.js"></script>
+  <script src="https://cdn.bootcss.com/tensorflow/1.2.2/tf.min.js"></script>
+  <script src="https://cdn.bootcss.com/typescript/3.5.3/typescript.min.js"></script>
+  <script src="https://cdn.bootcss.com/reflect-metadata/0.1.13/Reflect.min.js"></script>
+  <script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.dev.js"></script>
+  <script src="https://cdn.bootcss.com/immutable/4.0.0-rc.12/immutable.min.js"></script>
+  <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.min.js"></script>
+  <script src="/js/blog.js" type="module"></script>
+
+
+  <!--%- partial('google-analytics') %-->
+  
+  <title>blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Web Push: Data Encryption Test Page                   Web Push: Data Encryption Test Page               Introduction     The Push APIs     (also known as Web Push) provide the ability">
+<meta property="og:type" content="website">
+<meta property="og:title" content="blog">
+<meta property="og:url" content="https://birdsofsummer.github.io/demos/web-push/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="Web Push: Data Encryption Test Page                   Web Push: Data Encryption Test Page               Introduction     The Push APIs     (also known as Web Push) provide the ability">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://birdsofsummer.github.io/demos/web-push/icon.png">
+<meta property="og:updated_time" content="2020-01-10T10:20:08.389Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blog">
+<meta name="twitter:description" content="Web Push: Data Encryption Test Page                   Web Push: Data Encryption Test Page               Introduction     The Push APIs     (also known as Web Push) provide the ability">
+<meta name="twitter:image" content="https://birdsofsummer.github.io/demos/web-push/icon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <!--link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://birdsofsummer.github.io"></form>
+      </div>
+    </div>
+  </div>
+  <section class="loading"><section>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/demos/web-push/index.html" class="article-date">
+  <time datetime="2020-01-10T10:20:08.389Z" itemprop="datePublished">2020-01-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+      <meta charset="utf-8">
+    <title>Web Push: Data Encryption Test Page</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="manifest.json" rel="manifest">
+  </head>
+  <body>
+  <h1>Web Push: Data Encryption Test Page</h1>
+    <div class="errMsg hidden"></div>
+    <div class="intro">
+    <h2>Introduction</h2>
+    <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API" target="_blank" rel="noopener">Push APIs</a>
+    (also known as Web Push) provide the ability for Application Servers
+    (App Servers) to send up to 4 Kilobites of data to applications (apps).
+    In order to do this securely, that data would first need to be encrypted
+    so that it wouldn't be exposed to the push servers in transit. The browser
+    decrypts the data later before delivering it to your app.</p>
+    <p>Unfortunately, implementing this kind of security is complicated and
+    encryption may be confusing to those not familiar with it.</p>
+    <h2>Purpose</h2>
+    <p>This page attempts to transparently show the keys and values used to
+    encrypt data for delivery by a push service. It also provides a "working
+    example" of how developers might successfully implement encryption of push
+    notifications for their application or library. Following the steps below,
+    you can see all the "moving parts" in one place and get started adding
+    encryption to your own App Server or library.</p>
+    <h2>Pre-requisites</h2>
+    <p>This page will presume you're familiar with using push notifications
+    and want to start using the experimental encrypted data payloads.
+    <i>NOTE:</i> This feature is currently <u>experimental</u>, there is
+    <u>very limited library support!</u></p>
+    <p>Before getting started, I strongly recommend you first consult:
+    <a href="https://developer.mozilla.org/docs/Web/API/Push_API/Using_the_Push_API" target="_blank" rel="noopener">Using
+    the Push API</a>on MDN (the Mozilla Developer Network). This will help
+    explain how push basic notifications function without data payloads.</p>
+    <h2>Getting Started</h2>
+    <p>Emulating an App Server, this page allows you to do the following:
+    <ol>
+        <li>Register a Service Worker</li>
+        <li>Create a Web Push Subscription</li>
+        <li>Generate some dummy content</li>
+        <li>Generate a local encryption key</li>
+        <li>Encrypt some dummy content</li>
+        <li>Add optional VAPID data</li>
+        <li>Send the message</li>
+    </ol>
+    </p><p><i>NOTE:</i> It may be useful to open the
+    Web Debugging Console (Ctrl+Shift+K on Firefox) and note the messages
+    being generated in the console log.</p>
+</div>
+    <div id="regSec" class="section hidden">
+    <h2>0. Register the Service Worker:</h2>
+    First, let's register the service worker, since it's
+    not already present.<br>
+    <button id="regButton">Register the Service Worker...</button>
+    </div>
+    <div class="section">
+    <h2>1. Create a Web PushSubscription:</h2>
+    <p>These elements are provided to your web app from the
+       <code><a href="https://developer.mozilla.org/en-US/docs/Web/API/PushManager" target="_blank" rel="noopener">PushManager</a></code>.
+
+    call. These values should be relayed directly to your back-end App
+    Server via your app. Never send this information through the Push
+    Servers!</p>
+    <div class="ctrl">
+    <button id="subscribe" disabled>Get subscription info</button>
+    </div>
+    <div id="endpoint">
+    <div class="title">endpoint</div>
+    <div class="description">The <code>subscription.endpoint</code> is
+        the URI where you
+        should POST the encrypted message content. To make things easier,
+        the page will fetch one for itself. Feel free to replace this with
+        a different endpoint and key if you wish, and press the "Send Data"
+        button below to try it out.
+    </div>
+    <textarea name="endpoint" value="http://example.com/" class="value endpoint"></textarea>
+    </div>
+    <div id="receiverKey">
+    <div class="title">p256dh Key</div>
+    <div class="description">The "p256dh" key is the ECDH curve p256 Diffie Hellman key
+        returned as part of the subscription. You use
+        <code>subscription.getKey('p256dh')</code> to retrieve this value</div>
+    <textarea class="value receiverKey" name="receiverKey"></textarea>
+    </div>
+    <div id="authKey">
+        <div class="title">Authentication Secret</div>
+        <div class="description">The auth secret is provided by the browser as
+            <code>subscription.getKey('auth')</code> and is extra data for the
+            HKDF function, which generates the Shared Key</div>
+        <div name="authKey" class="value authKey"></div>
+    </div>
+    </div>
+    <div class="section">
+    <h2>2. Generate the Content</h2>
+    <p>These are normally the things you enter for each encrypted push message.</p>
+    <div id="salt">
+    <div class="title">Salt:</div>
+    <div class="description">The salt is an array of 16 random bytes that the
+        App Server generates for each outbound encrypted request.
+        This should change for every request, but it can be helpful for
+        library authors to see the same salt value.</div>
+    <input name="salt" class="salt value" value="salt">
+    <button id="newSalt">New Salt</button>
+    </div>
+    <div id="data">
+    <div class="title">Data:</div>
+    <div class="description">This is your data. For this demonstration, we're going
+    to presume that it's a string, but the data can be
+    <a href="https://w3c.github.io/push-api/#pushmessagedata-interface" target="_blank" rel="noopener">any format</a>.
+    Just be sure that the service worker 'push' event handler knows how to read it.</div>
+    <textarea name="data">This is test data.
+</textarea>
+    <div class="data_ok hidden">All good! The service worker managed to get
+        and understand the data.</div>
+    <div class="errMsg hidden">No good. There was a problem with the service worker
+        handling the data.<br>
+        Check the console and retry to see if it's still a problem.
+        Also try Copying the "<a href="#send">curl</a>" buffer below into a
+        command line. If things work, this text
+        will turn green.</div>
+    </div>
+    <div class="ctrl">
+    Ok, we're ready to <button id="encrypt" disabled>Encrypt the data</button>
+    </div>
+</div>
+<div class="section reset">
+    <h2>3. Generate the Local Encryption Key:</h2>
+    <p>These items (plus the <span class="salt">Salt</span>) are unique per
+    encryption, and usually generated "on the fly" by the various algorithms.
+    Key negotiation requires the generation of a <b class="senderKey">Local Key</b>.
+    The <b>Local Key</b> is an arbitrary key pair made for this specific
+    exchange and used to derive bits from the <b class="receiverKey">p256dh</b> key.
+    </p>
+    <div id="senderKeyPri">
+        <div class="title">Local Key (private):</div>
+        <div class="description">The private portion of the Local Key.
+        Unfortunately, it's not easy to read this from a provided value.
+        </div>
+        <div name="senderKeyPri" class="value wrap"></div>
+    </div>
+    <div id="senderKeyPub">
+        <div class="title">Local Key (public):</div>
+        <div class="description">This key is temporary, but the public key needs to be
+        sent as the <span class="def">Encryption Key</span></div>
+        <div name="senderKeyPub" class="value"></div>
+    </div>
+    <div id="senderKey">
+        <div class="title">Local Key (public, raw):</div>
+        <div class="description">This is the same public
+            <b class="senderKey">local key</b>,
+            only formatted in "raw" form. This is the byte array that
+            is used for deriving the <span class="nonce">nonce</span></div>
+        <div name="senderKey" class="value senderKey"></div>
+    </div>
+</div>
+<div class="section reset">
+    <h2>4. Encrypt the Message:</h2>
+    <p>These items are the various intermediary and final elements used to
+    generate the encryption key.</p>
+    <div id="ikm">
+        <div class="title">Shared Key:</div>
+        <div class="description">AES-GCM key material derived from the private <b class="senderKey">local key</b>, the <span class="authKey">Authentication Secret</span>, and the public <b class="receiverKey">p256dh key</b>. This comes from a <code>WebCrypto.deriveBits</code> call in <code>webpush.js</code></div>
+        <div name="ikm" class="value"></div>
+    </div>
+        <div id="gcmB">
+            <div class="title">Encryption Key</div>
+            <div class="description">HKDF generated bits derived from the shared key
+            material, which is a <acronym title="The string " content-encoding: aesgcm"">
+            static string</acronym> run through the KDF which has been seeded from the
+            <span class="salt">salt</span> and the <span class="senderKey"> senderKey</span>.
+            </div>
+            <div name="gcmB" class="value"></div>
+        </div>
+        <div id="nonce">
+            <div class="title">Derived Nonce:</div>
+            <div class="description">The "nonce" here is derived from a <acronym title="The string used is " content-encoding: nonce"">static
+               string</acronym>, run through the KDF which has been seeded from the
+               <span class="salt">salt</span>
+                and the <span class="senderKey">senderKey</span>.</div>
+            <div name="nonce" class="value nonce"></div>
+        </div>
+        <div id="iv">
+            <div class="title">Initialization Vector:</div>
+            <div class="description">The AES-GCM Initialization Vector.
+            This is a bit more complex, as it comprises a known chunk
+            created through the same KDF that created the <span class="nonce">
+            nonce</span>, as well the index number of the chunk of data
+            we're encoding.</div>
+            <div name="iv" class="value"></div>
+        </div>
+    </div>
+<div class="section">
+    <h2>5. Add VAPID data</h2>
+    <p>VAPID is an optional header block that allows senders to "self identify". It consists of a
+    <a href="https://jwt.io" target="_blank" rel="noopener">JSON Web Token</a> that contains identification claims.
+    <div id="vapidClaims">
+        <div class="title">VAPID claims</div>
+        <div>
+            <label for="sub"><b>sub:</b> Subscriber: The contact email address for the owner of this subscription</label><br>
+            <input class="item required" name="sub" type="url" autocomplete="url" placeholder="mailto:admin@example.com"><br>
+            <label for="exp"><b>exp:</b> Expiration: When this VAPID expires (Max is 24 hours from now)</label><br>
+            <input class="item" name="exp" id="vapid_exp" disabled="true"><br>
+        </div>
+        <div id="vapidError" class="errMsg"></div>
+    </div>
+    <div class="ctrl">Optionally <button id="addVapid">Add VAPID</button></div>
+    <div id="vapidHeaders">
+        <div class="title">VAPID Headers</div>
+        <div class="description">Add these headers to your outbound request. The headers are "Authorization"
+            and "Crypto-Key". "Authorization" is a JWT containing the signed <code>claims</code>. "Crypto-Key"
+            contains a "p256ecdsa" element that specifies the "raw" public key used to verify the JWT signature.
+            Note that "Crypto-Key" may contain multiple elements separated by a comma. If you specify VAPID
+            headers, we'll append them to the Crypto-Key header.</div>
+        <div name="vapidHeaders" class="vapidHeader value"></div>
+    </div>
+    <div id="vapidPrivate">
+        <div class="title">VAPID private key</div>
+        <div class="description">Normally, you retain your VAPID key pair on your server, and reuse the pair for all
+           subsequent calls. You can create a new VAPID key pair at any time, but things like the dashboard won't
+           associate information for the old key pair with a new one. In essence, the new key is a new ID for you.</div>
+       <div name="vapidPrivate" class="value"></div>
+   </div>
+    <div id="vapidPublic">
+        <div class="title">VAPID public key</div>
+        <div class="description">VAPID <b><i>always</i></b> uses its own set of keys. You sign with the private half
+            and include the public key with the <code>Crypto-Key</code> header. This key is in the "uncompressed" or
+            "raw" key point format.</div>
+        <div name="vapidPublic" class="value"></div>
+    <div id="pushDashboard">
+        <div class="title">Push Dashboard</div>
+        <div class="description">
+          <p>To monitor your push messages, you will add the VAPID public key to your app in <a href="https://dev-dashboard.deis.dev.mozaws.net/en/" target="_blank">the push dashboard</a>. To validate you own the app, you will also need to sign a token with your VAPID private key, and paste the signed token back into the dashboard.</p>
+          <p>If you are using this page to test, you can paste this test VAPID public key into the dashboard:</p>
+          <div name="vapidPublicForDashboard" class="value"></div>
+          <p>Then paste the app token here to get the signed token value:</p>
+          <input class="item" name="push_app_token" id="push_app_token">
+          <button id="signToken">Sign token</button>
+          <div class="value" name="signedToken"></div>
+        </div>
+    </div>
+  </div>
+</p></div>
+<div class="section reset">
+    <h2>6. Send the Message:</h2>
+    <p>These are the outputs. You can cut and paste the <b>Curl</b>
+    content and watch the Web Console to see the message be received and
+    handled by the Service Worker.</p>
+    <a name="send">
+    <div id="curl">
+        <div class="title">Curl:</div>
+        <div class="description">This is a proxy for your library. Please
+        note that the input for this is a binary blob. In this case, I'm
+        attempting to write the data out to a file, then read it in with
+        curl. Transcoding the data to base64 or some other encoding mechanism
+        will not work.</div>
+        <div name="curl" class="value wrap"></div>
+        <p>If you don't have curl, or don't feel like cutting and pasting,
+        you can <button id="refresh" disabled>Send the Data</button> and this
+        page will do it for you.</p>
+    <div id="success" class="hidden">
+    <p> If all goes well, you should see something like the following pop up on your screen.
+    <div id="fakeNotif">
+    <div class="close">X</div>
+    <div class="fntitle">Got message</div>
+    <img src="icon.png">
+    <div class="msg"></div>
+    <div class="via">via YourSite.foo</div>
+    </div>
+    </p>
+    </div>
+        <div class="data_ok hidden">All good! The service worker
+            managed to get and understand the data.</div>
+        <div class="errMsg hidden">No good. There was a problem
+            with the service worker handling the data.<br>
+        Check the console and retry to see if it's still a problem.
+        </div>
+    </div>
+    <div id="osalt">
+        <div class="title">Salt:</div>
+        <div class="description">The salt value sent in the "Encryption"
+        header.</div>
+        <div name="osalt" class="value salt wrap"></div></div>
+    <div id="odh">
+        <div class="title">dh:</div>
+        <div class="description">Diffie-Hellman key sent in the "Encryption-Key"
+        header.</div>
+        <div name="odh" class="value wrap senderKey"></div>
+    </div>
+    <div id="odata">
+        <div class="title">data:</div>
+        <div class="description">This is the raw, encrypted data represented
+        as hexidecimal byte pairs. If you wish, you can compare these with
+        whatever byte editor you have (e.g. <code>xxd</code>
+        on Linux systems) to verify that the data is correct.
+        </div>
+        <div name="odata" class="value"></div>
+        <!--div class="ctrl"><button id="saveas" disabled>Save Data As...</button> <span class="note">Experimental!</span></div -->
+    </div>
+</a></div>
+<div class="footer">
+    <p>Source available on <a href="https://github.com/jrconlin/WebPushDataTestPage" target="_blank" rel="noopener">GitHub</a>. Licensed under <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank" rel="noopener">Mozilla Public License v.2.0</a></p>
+</div>
+<audio src="firefox.mp3" id="ring">
+  </audio></body>
+  <script src="common.js"></script>
+  <script src="der_lite.js"></script>
+  <script src="base64.js"></script>
+  <script src="webpush.js"></script>
+  <script src="vapid.js"></script>
+  <script>
+'use strict';
+
+/*
+document.body.onload = function() {
+    if (window.location.protocol.replace(/:/, '').toLowerCase() === 'http') {
+        window.location.href = window.location.href.replace(/^http:/i, 'https:');
+    }
+};
+*/
+
+function show_ok(state, msg) {
+    let o = document.getElementById("success");
+    if (msg == false) {
+        msg = get("data");
+    }
+    o.getElementsByClassName("msg")[0].textContent = msg;
+    o.getElementsByClassName("via")[0].textContent = `via ${document.location.host}`;
+    if (state) {
+        o.classList.remove("hidden")
+    } else {
+        o.classList.add("hidden")
+    }
+}
+
+function notify(title, body) {
+    let notif = new Notification(title,
+        {body: body,
+         icon: "icon.png",
+        });
+}
+
+
+function show_err(errMsg) {
+    show_ok(false);
+    let err = document.getElementsByClassName("errMsg");
+    for (let i=0; i<err.length; i++) {
+        if (errMsg == false) {
+            err[i].classList.add("hidden");
+            err[i].innerHTML='';
+        } else {
+            err[i].innerHTML = errMsg;
+            err[i].classList.remove("hidden");
+        }
+    }
+    return;
+}
+
+
+function register(appServerKey) {
+    /* Register the service worker.
+       Remember, the service worker script must be served either from
+       "localhost" or from a TLS secured site (e.g. https://example.com)
+
+     */
+    return navigator.serviceWorker.getRegistration()
+    .then( function(registration) {
+        if (!registration || !navigator.serviceWorker.controller) {
+            return navigator.serviceWorker.register("sw.js")
+            .then(function() {
+                console.log("Service worker loaded, reloading");
+                window.location.reload();
+            })
+            .catch(function(err) {
+                if (err.name == "SecurityError" || err.name == "NotSupportedError") {
+                    show_err("Could not start.<br>This page requires a secure " +
+                             "server. (e.g. one that can serve https:// pages). " +
+                             "<br>The page can also be served from `localhost'.");
+                    return
+                }
+                console.error("Error", err);
+            });
+        }
+        if (window.QA_MODE) {
+            return subscribe(appServerKey);
+        }
+        return registration;
+    })
+    .catch(function(err) {
+        console.error("Registration Error:", err);
+        let msg = "Could not start.<br> " + err.toString();
+        show_err(msg);
+    });
+}
+
+
+function subscribe(appServerKey) {
+    /* Fetch an endpoint.
+
+       Yes, this could be a continuation of the above. I've broken it out
+       a little purely to make the page a little less "magical" about what
+       it's doing.
+    */
+    return navigator.serviceWorker.getRegistration()
+        .then( function(registration){
+            /* The service worker script has been loaded, so
+               now we need to register for an endpoint.
+
+               Normally, you only need to register once, the first
+               time that you ever load a given app or page.
+
+            */
+            function resubscribe() {
+                var options = {
+                    // Set this to be "true" if you're only displaying
+                    // the data to the user. Set it to "false" if you
+                    // want to use this notification internally and not
+                    // display a message.
+                    userVisibleOnly: false,
+                };
+                if (pageQueryParams.has("restricted")) {
+                    // If requested, create a restricted subscription that
+                    // requires VAPID to send push messages to the endpoint.
+                    options.applicationServerKey = appServerKey;
+                }
+
+                return registration.pushManager.subscribe(options);
+            }
+            console.debug("Registering...", registration);
+            // Get the subscription info.
+            return registration.pushManager.getSubscription().then(subscription => {
+                if (subscription) {
+                    return subscription.unsubscribe().then(resubscribe);
+                }
+                return resubscribe();
+            })
+            .then(function(subscription_info) {
+                if (! subscription_info.endpoint) {
+                    console.error("Subscription doesn't have an " +
+                                  "endpoint. Aborting.");
+                    let err = new Error();
+                    err.name = "NoEndpoint";
+                    err.message = "Subscription does not have an endpoint";
+                    throw err;
+                }
+                if (! subscription_info.getKey) {
+                    console.error("Subscription doesn't allow " +
+                                  "data encryption. Aborting.");
+                    let err = new Error();
+                    err.name = "NoData";
+                    err.message = "Subscription does not allow data";
+                    throw err;
+                }
+                output('endpoint', subscription_info.endpoint);
+                let rkey =
+                    base64url.encode(subscription_info.getKey('p256dh'));
+                output('receiverKey', rkey);
+                output('salt',
+                       base64url.encode(crypto.getRandomValues(
+                                            new Uint8Array(16))));
+                try {
+                    // Auth key allows for improved Crypto-Key support.
+                    // However, it's being slowly rolled out.
+                    let authKey = subscription_info.getKey('auth');
+                    output('authKey', base64url.encode(authKey));
+                    if (! authKey) {
+                        console.warn ("This browser doesn't support auth key. Please update.");
+                    }
+                } catch (e) {
+                    //throw err;
+                    console.warn("Crypto-Key support unavailable.");
+                }
+                document.getElementById("encrypt").disabled = false;
+
+                window.subscription_info = subscription_info;
+                if (window.QA_MODE) {
+                    return vapid.sign({
+                        sub: "mailto:admin@example.com",
+                    }).then(headers => {
+                        delete(headers.publicKey);
+                        return encrypt(rkey, JSON.stringify(headers));
+                    }).then(_ => subscription_info);
+                }
+
+                return subscription_info;
+
+            })
+            .catch(function(err) {
+                console.error("ERROR: ", err);
+                show_err(err.message);
+            });
+        })
+    .catch(function(err) {
+        if (err.name == "SecurityError" || err.name == "NotSupportedError") {
+            show_err("Could not start.<br>This page requires a secure " +
+                     "server. (e.g. one that can serve https:// pages). " +
+                     "<br>The page can also be served from `localhost'.");
+            return
+        }
+        console.error("Registration Error:", err);
+        let msg = "Could not start.<br> ";
+        show_err(msg);
+    });
+};
+
+
+function reset() {
+    let resets = document.getElementsByClassName("reset");
+    for (let i of resets) {
+        let items = i.getElementsByClassName("value");
+        for (let j of items) {
+            let target =  j.attributes.getNamedItem('name').value;
+            output(target, "");
+        }
+    }
+}
+
+
+function encrypt(receiverKey, vapid_headers) {
+    /* Fetch & fill various fields, attempt to create a message and send
+       it to yourself.
+    */
+    let endpoint = get("endpoint");
+    let salt = base64url.decode(get("salt"));
+    if (!salt) {
+        return;
+    }
+    if (! receiverKey) {
+        receiverKey = get("receiverKey");
+    }
+    let data = get("data");
+    console.debug("receiverKey", receiverKey);
+    let rKey = base64url.decode(receiverKey);
+    let authKey;
+    try {
+        // Auth key allows for improved Crypto-Key support.
+        // However, it's being slowly rolled out.
+        authKey = subscription_info.getKey('auth');
+        if (authKey) {
+            console.debug ("Auth key: ",
+                base64url.encode(authKey));
+        }
+    } catch (e) {
+        //throw err;
+        console.warn("Crypto-Key support unavailable.");
+    }
+
+    return webpush({endpoint: endpoint,
+                    receiverKey: rKey,
+                    authKey: authKey},
+                    data,
+                    salt)
+        .then(options => {
+                // If we have VAPID info, fetch it.
+                try {
+                    if (vapid_headers == undefined) {
+                        vapid_headers = JSON.parse(get("vapidHeaders"));
+                    }
+                } catch (e) {
+                    console.warn("Could not fetch VAPID headers", e);
+                }
+                if (vapid_headers) {
+                    vapid_headers = JSON.parse(vapid_headers);
+                }
+                // Populate the extra fields
+                output('osalt', base64url.encode(options.salt));
+                output('odh', options.dh);
+                let rawStr = '';
+                let outStr = '';
+                // Construct the curl. Remember, this needs to
+                // write a binary file first, then have curl read that file.
+                // This is because putting the data "inline" can fail.
+                let sbody = '';
+                let ebody = '';
+                let cbody = '';
+                for (let k in options.payload){
+                    let ik = parseInt(k);
+                    let ij = parseInt(options.payload[k]);
+                    let cj = ("00" + ij.toString(16)).slice(-2, 4);
+                    sbody += `\\x${cj}`;
+                    cbody += String.fromCodePoint(ij);
+                    ebody += cj;
+                    if ((ik + 1) % 2 == 0) {
+                        ebody += " ";
+                    }
+                    if ((ik + 1) % 16 == 0) {
+                        ebody += "<br>";
+                    }
+                }
+                outStr += 'echo -ne "' + sbody + '" > encrypted.data;';
+                // dump the raw curl to console.log. This is useful for
+                // folks doing device work.
+                rawStr = outStr;
+                rawStr += `curl -v -X ${options.method} ${options.endpoint} `;
+                let enc_content = 'keyid=p256dh;dh=' + options.dh;
+                if (options.encr_header == "crypto-key" && vapid_headers) {
+                    // add the vapid info
+                    // Note: technically, these should be separated with a
+                    // ",", however some Push Servers may reject "," as
+                    // an invalid character. You can use ";" and create
+                    // a single record.
+                    enc_content += ";" + vapid_headers["crypto-key"];
+                    rawStr += ` -H "Authorization: ` +
+                        `${vapid_headers.authorization}" `;
+                }
+                rawStr += ` -H "${options.encr_header}: ` + enc_content + '"';
+                rawStr += ' -H "encryption: keyid=p256dh;salt=' +
+                    base64url.encode(options.salt) + '"';
+                rawStr += ' -H "content-encoding: aesgcm"';
+                rawStr += ' -H "TTL: 60"';
+                rawStr += ' --data-binary @encrypted.data';
+                console.log(rawStr);
+
+                // outStr is the styled version, which is easier for humans
+                enc_content = `keyid=p256dh;dh=<span class="senderKey" ` +
+                    `title="The public key we used to encrypt">` +
+                    options.dh + `</span>`
+                outStr += `\ncurl -v -X ${options.method} ` +
+                    ` <span class="endpoint" ` +
+                   `title="The subscription endpoint"` +
+                   `>${options.endpoint}</span> `;
+                if (options.encr_header == "crypto-key" && vapid_headers) {
+                    // add the vapid info
+                    enc_content += `,<span class="vapidHeader" ` +
+                        `title="a VAPID header">` +
+                        vapid_headers["crypto-key"] + `</span>`;
+                    outStr += ` -H "Authorization: <span class="vapidHeader"` +
+                        ` title="a VAPID header">` +
+                        `${vapid_headers.authorization}</span>"`;
+                }
+
+                outStr += ` -H "${options.encr_header}: ${enc_content}"`;
+                outStr += ` -H "encryption: keyid=p256dh;salt=<span ` +
+                    `class="salt" title="The salt value we used to `+
+                    `encrypt">${base64url.encode(options.salt)}</span>"`;
+                outStr += ` -H "content-encoding: ${options.content_type}"`;
+                outStr += ' -H "TTL: 60"';
+                outStr += ' --data-binary @encrypted.data';
+                output('curl', outStr);
+                output('odata', ebody);
+                //var blob = new Blob([cbody],
+                //    {type: 'application/octet-binary'});
+                if (vapid_headers) {
+                    Object.keys(vapid_headers).forEach(name => {
+                        let headers = options.headers.getAll(name);
+                        headers.push(vapid_headers[name]);
+                        options.headers.set(name, headers.join(","));
+                    });
+                }
+                let refresh = document.getElementById('refresh');
+                refresh.onclick=function() {
+                    send(options);
+                }
+                refresh.disabled=false;
+                show_ok(true, false);
+                if (window.QA_MODE) {
+                    return send(options);
+                }
+
+              })
+        .catch(e => {
+            console.error("Error:", e);
+        });
+}
+
+
+function do_encrypt(event, vapidHeaders) {
+    reset();
+    if (! vapidHeaders) {
+        vapidHeaders = get('vapidHeaders');
+    }
+    encrypt(get('receiverKey'), vapidHeaders);
+}
+
+document.getElementById('encrypt').onclick = do_encrypt;
+
+document.getElementById('newSalt').onclick = function(event) {
+    reset();
+    output('salt', base64url.encode(newSalt()));
+}
+
+navigator.serviceWorker.addEventListener('message', function(event) {
+    console.debug('Service Worker sent:', JSON.stringify(event.data));
+    if (event.data.type == 'content') {
+        // Compare what we got with the source to make sure
+        // that things worked ok.
+        let source = get("data");
+        notify("Got message", event.data.content);
+        show_ok(true, event.data.content);
+        if (window.QA_MODE) {
+            document.getElementById("ring").play();
+        }
+    }
+});
+
+
+function init_vapid(){
+    // Vapid should ALWAYS use it's own key set.
+    document.getElementById('vapid_exp').value = parseInt(Date.now()*.001) + 86400;
+    document.getElementById('addVapid').addEventListener('click', function(event) {
+        add_vapid(event);
+        reset();
+    });
+    document.getElementById('signToken').addEventListener('click', function(event) {
+        sign_token(event);
+    });
+    return vapid.generate_keys().then(keys => {
+        let exporter = new DERLite();
+        return Promise.all([
+            exporter.export_private_der(keys.privateKey),
+            exporter.export_public_der(keys.publicKey),
+            vapid.export_public_raw(),
+        ]).then(([vapidPrivate, vapidPublic, appServerKey]) => {
+            output("vapidPrivate", vapidPrivate);
+            output("vapidPublic", vapidPublic);
+            output("vapidPublicForDashboard", appServerKey);
+            return mzcc.strToArray(mzcc.fromUrlBase64(appServerKey));
+        });
+    });
+}
+
+function add_vapid(event) {
+    /* Add the optional VAPID information.
+
+       See vapid.js for how this is built using Javascript.
+       (I'll note that it's MUCH easier using other languages like python or java.)
+    */
+    let vapid_items = document.getElementById('vapidClaims').getElementsByClassName("item");
+    let claims = {};
+    let vapid_err = "";
+    for (let i of vapid_items){
+        if (i.classList.contains('required') && ! i.value) {
+            console.error(`VAPID value "${i.name}" is empty. Can't proceed`);
+            i.classList.add("error");
+            vapid_err += `${i.name} cannot be empty.<br>`;
+        } else {
+            i.classList.remove("error");
+            claims[i.name] = i.value;
+        }
+    }
+    document.getElementById("vapidError").innerHTML = vapid_err;
+    if (vapid_err) {
+        return false;
+    }
+    vapid.sign(claims).then(headers => {
+            delete(headers.publicKey);
+            let jheaders = JSON.stringify(headers);
+            output("vapidHeaders", JSON.stringify(headers, null, '    '));
+            // We don't really need to do a full message re-encryption here,
+            // but this is the easiest way to inject the VAPID headers into
+            // the demo send.
+            do_encrypt(vapidHeaders=headers);
+        })
+        .catch(err => {console.error(err)});
+}
+
+function sign_token(event) {
+  let push_app_token = document.getElementById('push_app_token');
+  let signed_token = vapid.validate(push_app_token.value).then(signed_token => {
+    output("signedToken", signed_token)
+    });
+}
+
+function preflight(){
+    // Check that this browser can do all we're going to ask of it.
+    let keys;
+    try{
+        let msg = "This browser is not yet ready to support Webpush data. ";
+        msg = "<br>See <a href=\"https://developer.mozilla.org/en-US/docs/" +
+            "Web/API/SubtleCrypto/exportKey#Browser_compatibility\">" +
+            "Browser Compatibility List</a> for currently supported browsers";
+        let webCrypto = window.crypto.subtle;
+        var pfkeys;
+        /* First, let's check that ECDH is supported. We'll need that
+         * for pretty much everything.
+         */
+        webCrypto.generateKey(
+             {name:"ECDH", namedCurve: "P-256"},
+             true,
+             ["deriveBits"])
+            .then(new_keys => {
+                /* Neat, now on to 'raw' key format. Raw keys are used
+                 * for things like the Crypto Key values. It's possible to
+                 * fake them (see common.js JWKToRaw) but there are lots
+                 * of potential bugs in that approach.
+                 */
+                pfkeys = new_keys;
+                webCrypto.exportKey('raw', pfkeys.publicKey)
+                .then(key => {
+                    /* Can we import a public key for key bit derivation?
+                     * This is used by signing mechanisms like VAPID and
+                     * data sends. Again, possible to fake, but introduces
+                     * more bugs than it solves.
+                     */
+                    webCrypto.importKey(
+                        'raw',
+                        key,
+                        {name:"ECDH", namedCurve:"P-256"},
+                        true,
+                        ['deriveBits'])
+                        .then( key => {
+                            /* And finally, can we derive bits from the
+                             * imported key and the private key? This is
+                             * the core of ECDSA. If it fails, yeah, nothing
+                             * is ever going to work. Christmas is ruined
+                             * forever, etc.
+                             */
+                            webCrypto.deriveBits(
+                                {name:"ECDH",
+                                 namedCurve:"P-256",
+                                 public: key},
+                                pfkeys.privateKey,
+                                256)
+                            .then(derived => {
+                                console.debug("Preflight is Ok");
+                                return true;
+                                })
+                            .catch(err => {
+                                show_err(msg +
+                                "<br>ECDSA key derivation not supported.<br>" +
+                                err.toString());
+                                console.error(err);
+                                });
+                            })
+                        .catch(err => {
+                            show_err(msg +
+                                "<br>Raw key import not supported.</br>" +
+                                  err.toString());
+                            console.error(err);
+                        });
+                })
+                .catch(err => {
+                    show_err(msg +
+                        "<br>Raw key export not supported.<br>" +
+                        err.toString());
+                    console.error(err);
+                });
+            })
+            .catch(err => {
+                show_err(msg + "<br>Preflight failed</br>" + err.toString());
+                });
+    } catch (e) {
+        show_error(msg + "<br>" + e.toString());
+        console.error("Preflight Failure", e);
+        return false;
+    }
+}
+
+
+var mzcc = new MozCommon();
+var vapid = new VapidToken(mzcc);
+var pageQueryParams = new URLSearchParams(window.location.search);
+var QA_MODE = pageQueryParams.has("qa");
+
+preflight();
+
+if (QA_MODE) {
+    // QA mode, ACTIVATE!
+    console.log("Entering QA mode...");
+    init_vapid().then(register).catch(e =>
+        show_err("Could not generate VAPID keys: " + e.message)
+    );
+} else {
+    init_vapid().then(appServerKey => {
+        if (navigator.serviceWorker.controller == null) {
+            let regButton = document.getElementById('regButton');
+            let regSec = document.getElementById('regSec');
+            regButton.onclick = () => register(appServerKey);
+            regSec.classList.remove('hidden');
+        } else {
+            let subButton = document.getElementById('subscribe');
+            subButton.onclick = () => subscribe(appServerKey);
+            subButton.disabled = false;
+            return register(appServerKey);
+        }
+    });
+}
+  </script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-75995708-1', 'auto');
+ga('send', 'pageview');
+</script>
+</html>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://birdsofsummer.github.io/demos/web-push/index.html" data-id="ck580fktw004081mcopkl3rk9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/async/">async</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/">db</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/db/mongo/">mongo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/redis/">redis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/design/color/">color</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/task/">task</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/async/">async</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/callback/">callback</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/color/">color</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddd/">ddd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graphql/">graphql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/promise/">promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redis/">redis</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/async/" style="font-size: 10px;">async</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/color/" style="font-size: 10px;">color</a> <a href="/tags/ddd/" style="font-size: 10px;">ddd</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/graphql/" style="font-size: 10px;">graphql</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 20px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/zz/">zz</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/tttt/">tttt</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/github-action/">github-action</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/erl/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Qing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

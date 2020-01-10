@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <!--base target="_blank" /-->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="referrer" content="never">
+  <meta name="keywords" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/346/346195.png" type="image/x-icon">
+
+
+  <link href="https://spin.js.org/spin.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+<link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.css" rel="stylesheet">
+  <link href="/css/grid.css" type="text/css" rel="stylesheet">
+  <link href="/css/blog.css" type="text/css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdn.bootcss.com/localforage/1.7.3/localforage.min.js"></script>
+  <script src="https://cdn.bootcss.com/ramda/0.26.1/ramda.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.16.1/lodash.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.bootcss.com/superagent/4.1.0-beta.1/superagent.min.js"></script>
+  <script src="https://cdn.bootcss.com/rxjs/6.5.2/rxjs.umd.min.js"></script>
+  <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.js"></script>
+  
+  <script src="https://cdn.bootcss.com/pixi.js/5.0.4/pixi.min.js"></script>
+  <script src="https://cdn.bootcss.com/d3/5.9.7/d3.min.js"></script>
+  <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+  <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+  <script src="https://cdn.bootcss.com/push.js/1.0.9/push.min.js"></script>
+  <script src="https://cdn.bootcss.com/linq.js/2.2.0.2/linq.min.js"></script>
+  <script src="https://cdn.bootcss.com/tensorflow/1.2.2/tf.min.js"></script>
+  <script src="https://cdn.bootcss.com/typescript/3.5.3/typescript.min.js"></script>
+  <script src="https://cdn.bootcss.com/reflect-metadata/0.1.13/Reflect.min.js"></script>
+  <script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.dev.js"></script>
+  <script src="https://cdn.bootcss.com/immutable/4.0.0-rc.12/immutable.min.js"></script>
+  <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.min.js"></script>
+  <script src="/js/blog.js" type="module"></script>
+
+
+  <!--%- partial('google-analytics') %-->
+  
+  <title>callback hell to promise | blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="[f1,f2,f3,f4,f5,]   -&amp;gt; [r1,r2,r3,r4,r5,]1234const run_parallel =(fs=[])=&amp;gt;fs.map(x=&amp;gt;x())//async tasksconst run_parallel_p =(fs=[])=&amp;gt;Promise.all(fs.map(x=&amp;gt;x()))  f1-&amp;gt;f2-&amp;gt;f3-&amp;gt;f4-&amp;">
+<meta name="keywords" content="nodejs,promise,async,callback">
+<meta property="og:type" content="article">
+<meta property="og:title" content="callback hell to promise">
+<meta property="og:url" content="https://birdsofsummer.github.io/2019/07/19/promisify/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="[f1,f2,f3,f4,f5,]   -&amp;gt; [r1,r2,r3,r4,r5,]1234const run_parallel =(fs=[])=&amp;gt;fs.map(x=&amp;gt;x())//async tasksconst run_parallel_p =(fs=[])=&amp;gt;Promise.all(fs.map(x=&amp;gt;x()))  f1-&amp;gt;f2-&amp;gt;f3-&amp;gt;f4-&amp;">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-01-10T10:20:08.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="callback hell to promise">
+<meta name="twitter:description" content="[f1,f2,f3,f4,f5,]   -&amp;gt; [r1,r2,r3,r4,r5,]1234const run_parallel =(fs=[])=&amp;gt;fs.map(x=&amp;gt;x())//async tasksconst run_parallel_p =(fs=[])=&amp;gt;Promise.all(fs.map(x=&amp;gt;x()))  f1-&amp;gt;f2-&amp;gt;f3-&amp;gt;f4-&amp;">
+  
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <!--link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://birdsofsummer.github.io"></form>
+      </div>
+    </div>
+  </div>
+  <section class="loading"><section>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-promisify" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/19/promisify/" class="article-date">
+  <time datetime="2019-07-19T09:06:12.000Z" itemprop="datePublished">2019-07-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/async/">async</a>►<a class="article-category-link" href="/categories/task/">task</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      callback hell to promise
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="f1-f2-f3-f4-f5-gt-r1-r2-r3-r4-r5"><a href="#f1-f2-f3-f4-f5-gt-r1-r2-r3-r4-r5" class="headerlink" title="[f1,f2,f3,f4,f5,]   -&gt; [r1,r2,r3,r4,r5,]"></a>[f1,f2,f3,f4,f5,]   -&gt; [r1,r2,r3,r4,r5,]</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> run_parallel =<span class="function">(<span class="params">fs=[]</span>)=&gt;</span>fs.map(<span class="function"><span class="params">x</span>=&gt;</span>x())</span><br><span class="line"></span><br><span class="line"><span class="comment">//async tasks</span></span><br><span class="line"><span class="keyword">const</span> run_parallel_p =<span class="function">(<span class="params">fs=[]</span>)=&gt;</span><span class="built_in">Promise</span>.all(fs.map(<span class="function"><span class="params">x</span>=&gt;</span>x()))</span><br></pre></td></tr></table></figure>
+
+<h3 id="f1-gt-f2-gt-f3-gt-f4-gt-f5-gt-r"><a href="#f1-gt-f2-gt-f3-gt-f4-gt-f5-gt-r" class="headerlink" title="f1-&gt;f2-&gt;f3-&gt;f4-&gt;f5   -&gt; r"></a>f1-&gt;f2-&gt;f3-&gt;f4-&gt;f5   -&gt; r</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> repeat=<span class="function">(<span class="params">x,n</span>)=&gt;</span><span class="built_in">Array</span>(n).fill(x)</span><br><span class="line"><span class="keyword">const</span> run_sequential=<span class="function">(<span class="params">fs=[],result</span>)=&gt;</span>fs.reduce(<span class="function">(<span class="params">acc,f</span>)=&gt;</span>f(acc),result)</span><br><span class="line"><span class="keyword">const</span> run_repeat=<span class="keyword">async</span> (f,n=<span class="number">1</span>,result)=&gt;run_sequential(repeat(f,n),result)</span><br><span class="line"></span><br><span class="line"><span class="comment">//async tasks</span></span><br><span class="line"><span class="keyword">const</span> run_sequential_p1=<span class="keyword">async</span> ([h,...t],result)=&gt; h ?  run_sequential(t,<span class="keyword">await</span> h(result)) : result </span><br><span class="line"><span class="keyword">const</span> run_sequential_p2=<span class="keyword">async</span>(fs,result)=&gt;fs.reduce(<span class="keyword">async</span> (acc,f)=&gt;f(<span class="keyword">await</span> acc),result)</span><br><span class="line"><span class="keyword">const</span> run_repeat_p=<span class="keyword">async</span> (f,n=<span class="number">1</span>,result)=&gt;run_sequential_p2(repeat(f,n),result)</span><br></pre></td></tr></table></figure>
+
+<h3 id="f1-gt-f2-gt-f3-gt-…fn"><a href="#f1-gt-f2-gt-f3-gt-…fn" class="headerlink" title="f1-&gt;f2-&gt;f3-&gt;…fn"></a>f1-&gt;f2-&gt;f3-&gt;…fn</h3><pre><code>cond ? next() : return</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//f=(ctx,next)=&gt;&#123;...;next()&#125;</span></span><br><span class="line"><span class="comment">//compose([f1,f2,...,fn])</span></span><br><span class="line"><span class="keyword">const</span> compose=<span class="function">(<span class="params">[h,...t]</span>)=&gt;</span><span class="function"><span class="params">ctx</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!h) &#123; <span class="keyword">return</span> ; &#125;</span><br><span class="line">    h(ctx,()=&gt;compose(t)(ctx))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//f=async(ctx,next)=&gt;&#123;await g(ctx),await next()&#125;</span></span><br><span class="line"><span class="comment">//compose([f1,f2,...,fn])</span></span><br><span class="line"><span class="keyword">const</span> compose1=<span class="function">(<span class="params">[h,...t]</span>)=&gt;</span><span class="keyword">async</span> ctx=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span> (!h) &#123; <span class="keyword">return</span> ; &#125;</span><br><span class="line">    <span class="keyword">await</span> h(ctx,()=&gt;compose1(t)(ctx))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_compose=<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">        f1=<span class="function">(<span class="params">ctx,next</span>)=&gt;</span>&#123;</span><br><span class="line">           ctx.user_name=<span class="string">"ccc"</span></span><br><span class="line">           next()</span><br><span class="line">        &#125;</span><br><span class="line">        f2=<span class="function">(<span class="params">ctx,next</span>)=&gt;</span>&#123;</span><br><span class="line">           token= ctx.user_name==<span class="string">"ccc"</span> ? <span class="number">2</span>  : <span class="number">0</span></span><br><span class="line">           ctx.token=token</span><br><span class="line">           next()</span><br><span class="line">        &#125;</span><br><span class="line">        f3=<span class="function">(<span class="params">ctx,next</span>)=&gt;</span>&#123;</span><br><span class="line">           token=ctx.token</span><br><span class="line">           ctx.auth= token==<span class="number">2</span> ? <span class="literal">true</span> : <span class="literal">false</span></span><br><span class="line">           <span class="keyword">if</span> (ctx.auth)&#123;</span><br><span class="line">               next()</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        f4=<span class="function">(<span class="params">ctx,next</span>)=&gt;</span>&#123;</span><br><span class="line">            get_age=<span class="function">(<span class="params">x</span>)=&gt;</span><span class="number">123</span></span><br><span class="line">            ctx.age=get_age(ctx.user_name)</span><br><span class="line">            next()</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ctx=&#123;&#125;</span><br><span class="line">        f=compose([f1,f2,f3,f4])</span><br><span class="line">        f(ctx)</span><br><span class="line">        <span class="built_in">console</span>.log(ctx)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_compose1=<span class="keyword">async</span>()=&gt;&#123;</span><br><span class="line">    add=<span class="keyword">async</span>(x)=&gt;x+<span class="number">10</span></span><br><span class="line">    superagent=<span class="built_in">require</span>(<span class="string">'superagent'</span>)</span><br><span class="line">    <span class="keyword">get</span>=u=&gt;superagent.<span class="keyword">get</span>(u).then(x=&gt;x.header)</span><br><span class="line">    u='http://www.baidu.com'</span><br><span class="line">    baidu=()=&gt;<span class="keyword">get</span>(u)</span><br><span class="line"></span><br><span class="line">    f1=async(ctx,next)=&gt;&#123;</span><br><span class="line">        ctx.a=<span class="keyword">await</span> add(<span class="number">10</span>)</span><br><span class="line">        ctx.b1=<span class="keyword">await</span> baidu()</span><br><span class="line">        <span class="keyword">await</span> next()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    f2=<span class="keyword">async</span>(ctx,next)=&gt;&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'2222222222222222222222'</span>,ctx.b1)</span><br><span class="line">        ctx.b=<span class="keyword">await</span> add(ctx.a)</span><br><span class="line">        ctx.b2=<span class="keyword">await</span> baidu()</span><br><span class="line">        <span class="keyword">await</span> next()</span><br><span class="line">    &#125;</span><br><span class="line">    f3=<span class="keyword">async</span>(ctx,next)=&gt;&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'3333333333333333333333'</span>,ctx.b2)</span><br><span class="line">        ctx.c=<span class="keyword">await</span> add(ctx.b)</span><br><span class="line">        ctx.b3=<span class="keyword">await</span> baidu()</span><br><span class="line">        <span class="keyword">await</span> next()</span><br><span class="line">    &#125;</span><br><span class="line">    f4=<span class="keyword">async</span>(ctx,next)=&gt;&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'44444444444444444444'</span>,ctx.b3)</span><br><span class="line">        ctx.d=<span class="keyword">await</span> add(ctx.c)</span><br><span class="line">        ctx.b4=<span class="keyword">await</span> baidu()</span><br><span class="line">        <span class="keyword">await</span> next()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ctx=&#123;&#125;</span><br><span class="line">    f=compose1([f1,f2,f3,f4])</span><br><span class="line">    <span class="keyword">await</span> f(ctx)</span><br><span class="line">    <span class="built_in">console</span>.log(ctx)</span><br><span class="line">    <span class="comment">// &#123; a: 20, b: 30, c: 40, d: 50 &#125; </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="callback-hell"><a href="#callback-hell" class="headerlink" title="callback hell"></a>callback hell</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//https://api.jquery.com/jQuery.get/</span></span><br><span class="line"><span class="keyword">const</span> callback_hell=<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">  fn=(...a,cb) </span><br><span class="line">  $.<span class="keyword">get</span>("1",</span><br><span class="line">     x1=&gt;$.<span class="keyword">get</span>(x1,</span><br><span class="line">         x2=&gt;$.<span class="keyword">get</span>(x2,</span><br><span class="line">                x3=&gt;$.<span class="keyword">get</span>(x3,</span><br><span class="line">                   (x4)=&gt;$.<span class="keyword">get</span>(x4,</span><br><span class="line">                               x5=&gt;$.<span class="keyword">get</span>(x5,x6=&gt;&#123;</span><br><span class="line">                                  <span class="comment">//...</span></span><br><span class="line">                               &#125;)</span><br><span class="line">                               )</span><br><span class="line">                        )</span><br><span class="line">         )</span><br><span class="line">     )</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">get</span>=async(u)=&gt;fetch(u).then(x=&gt;x.text())</span><br><span class="line">const gets=(u=[1,2,3,4,5])=&gt;run_parallel(u.map(<span class="keyword">get</span>))</span><br><span class="line"></span><br><span class="line">const test_run_seq=async()=&gt;&#123;</span><br><span class="line">    add=<span class="keyword">async</span> (x)=&gt;x+<span class="number">10</span></span><br><span class="line">    r0=<span class="keyword">await</span> run_sequential_p1([<span class="keyword">get</span>,<span class="keyword">get</span>,<span class="keyword">get</span>,<span class="keyword">get</span>],"1")</span><br><span class="line">    r1=await run_sequential_p2([<span class="keyword">get</span>,<span class="keyword">get</span>,<span class="keyword">get</span>,<span class="keyword">get</span>],"1")</span><br><span class="line">    r2=await run_repeat_p(<span class="keyword">get</span>,5,"1")</span><br><span class="line">    r3=await run_sequential_p1([add,add,add],10)</span><br><span class="line">    console.log(r3)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const test_async=async()=&gt;&#123;</span><br><span class="line">    <span class="keyword">let</span> u0=<span class="string">"1"</span></span><br><span class="line">    <span class="keyword">let</span> r1=<span class="keyword">await</span> <span class="keyword">get</span>(u0)</span><br><span class="line">    let r2=await <span class="keyword">get</span>(r1)</span><br><span class="line">    let r3=await <span class="keyword">get</span>(r2)</span><br><span class="line">    let r4=await <span class="keyword">get</span>(r3)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">const test_then=()=&gt;&#123;</span><br><span class="line">    <span class="keyword">get</span>("1")</span><br><span class="line">    .then(<span class="keyword">get</span>)</span><br><span class="line">    .then(<span class="keyword">get</span>)</span><br><span class="line">    .then(<span class="keyword">get</span>)</span><br><span class="line">    .then(<span class="keyword">get</span>)</span><br><span class="line">    .then(console.log)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const test_rxjs=()=&gt;&#123;</span><br><span class="line">      get1()</span><br><span class="line">      .map(<span class="keyword">get</span>)</span><br><span class="line">      .map(<span class="keyword">get</span>)</span><br><span class="line">      .map(<span class="keyword">get</span>)</span><br><span class="line">      .map(<span class="keyword">get</span>)</span><br><span class="line">      .mergeAll()</span><br><span class="line">      .subscribe(console.log);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="callback-gt-async-await"><a href="#callback-gt-async-await" class="headerlink" title="callback -&gt; async/await"></a>callback -&gt; async/await</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> each=<span class="function">(<span class="params">f</span>)=&gt;</span><span class="function">(<span class="params">o=&#123;&#125;</span>)=&gt;</span> <span class="built_in">Object</span>.entries(o).forEach(f)</span><br><span class="line"><span class="keyword">const</span> &#123;promisify&#125; = <span class="built_in">require</span>(<span class="string">'util'</span>);</span><br><span class="line"><span class="comment">//https://github.com/browserify/node-util</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> promisify0=<span class="function">(<span class="params">fn,t</span>)=&gt;</span><span class="function">(<span class="params">...arg</span>)=&gt;</span><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">f1,f2</span>)=&gt;</span>fn.call(t,...arg,(err,d)=&gt;err?f2(err):f1(d)))   <span class="comment">//fn(...,cb=(err,d)=&gt;(...)) //redis..</span></span><br><span class="line"><span class="keyword">const</span> promisify1=<span class="function">(<span class="params">fn</span>)=&gt;</span><span class="function">(<span class="params">...arg</span>)=&gt;</span><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">f1,f2</span>)=&gt;</span>fn(...arg,(err,d)=&gt;err?f2(err):f1(d)))   <span class="comment">//fn(...,cb=(err,d)=&gt;(...))</span></span><br><span class="line"><span class="keyword">const</span> promisify2=<span class="function">(<span class="params">fn</span>)=&gt;</span><span class="function">(<span class="params">...arg</span>)=&gt;</span><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">f1,f2</span>)=&gt;</span>fn(...arg,f1))   <span class="comment">//fn(...,cb)</span></span><br><span class="line"><span class="keyword">const</span> promisify3=<span class="function">(<span class="params">fn</span>)=&gt;</span><span class="function">(<span class="params">...arg</span>)=&gt;</span><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">f1,f2</span>)=&gt;</span>fn(f1,...arg,))  <span class="comment">//fn(cb,...)</span></span><br><span class="line"><span class="keyword">const</span> promisifyAll=<span class="function">(<span class="params">c</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> f=<span class="function">(<span class="params">[k,v]</span>)=&gt;</span>c.__proto__[<span class="string">"_"</span>+k]=promisify(v).bind(c)</span><br><span class="line">    each(f)(c.__proto__)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> promisifyAll1=<span class="function">(<span class="params">c</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> f=<span class="function">(<span class="params">[k,v]</span>)=&gt;</span>c.__proto__[<span class="string">"_"</span>+k]=promisify0(v).bind(c)</span><br><span class="line">    each(f)(c.__proto__)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> promisifyAll2=<span class="function">(<span class="params">c</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> p=c.constructor;</span><br><span class="line">    <span class="keyword">let</span> o=p.prototype</span><br><span class="line">    <span class="keyword">let</span> f=<span class="function">(<span class="params">[k,v]</span>)=&gt;</span>o[<span class="string">"_"</span>+k]=promisify0(v,c)</span><br><span class="line">    each(f)(o)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_promisify1=<span class="keyword">async</span>()=&gt;&#123;</span><br><span class="line">      <span class="comment">//  callback</span></span><br><span class="line">      add=<span class="function">(<span class="params">x,y,f</span>)=&gt;</span>f(<span class="literal">null</span>,x+y)</span><br><span class="line">      add(<span class="number">1</span>,<span class="number">2</span>,<span class="built_in">console</span>.log)</span><br><span class="line"></span><br><span class="line">      add1=promisify1(add)</span><br><span class="line">      r=<span class="keyword">await</span> add1(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">      <span class="built_in">console</span>.log(r)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_promisify_no_err=<span class="keyword">async</span>()=&gt;&#123;</span><br><span class="line">      add_ok=<span class="function">(<span class="params">x,y,f</span>)=&gt;</span>f(x,y)</span><br><span class="line">      add_ok1=promisify2(add_ok)</span><br><span class="line">      r=<span class="keyword">await</span> add_ok1(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">      <span class="built_in">console</span>.log(r)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_promisify2=<span class="keyword">async</span>()=&gt;&#123;</span><br><span class="line">      sleep0=<span class="function">(<span class="params">f,n</span>)=&gt;</span>setTimeout(f,n*<span class="number">1000</span>)</span><br><span class="line">      sleep_p0=promisify2(sleep1)</span><br><span class="line"></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">1</span>)</span><br><span class="line">      <span class="keyword">await</span> sleep_p0(<span class="number">3</span>)</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">2</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_promisify3=<span class="keyword">async</span>()=&gt;&#123;</span><br><span class="line">      sleep0=<span class="function">(<span class="params">f,n</span>)=&gt;</span>setTimeout(f,n*<span class="number">1000</span>)</span><br><span class="line">      sleep_p1=promisify3(sleep0)</span><br><span class="line"></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">1</span>)</span><br><span class="line">      <span class="keyword">await</span> sleep_p1(<span class="number">3</span>)</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="number">2</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> test_promisify_all=<span class="keyword">async</span> ()=&gt;&#123;</span><br><span class="line">    <span class="keyword">const</span> redis = <span class="built_in">require</span>(<span class="string">"redis"</span>);</span><br><span class="line">    <span class="keyword">const</span> conn=<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">let</span> client = redis.createClient();</span><br><span class="line">        promisifyAll(client)</span><br><span class="line">        <span class="comment">//promisifyAll1(client)</span></span><br><span class="line">        <span class="comment">//promisifyAll2(client)</span></span><br><span class="line">        <span class="keyword">return</span> client</span><br><span class="line">    &#125;</span><br><span class="line">    c=conn()</span><br><span class="line">    r1=<span class="keyword">await</span> c._set(<span class="string">'foo'</span>,<span class="string">"ddd"</span>)</span><br><span class="line">    r2=<span class="keyword">await</span> c._get(<span class="string">'foo'</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(r1,r2)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://birdsofsummer.github.io/2019/07/19/promisify/" data-id="ck580fkpm000i81mcidd7c88h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/async/">async</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/callback/">callback</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/promise/">promise</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/07/19/graphql/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          nodejs graphql
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/11/color/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">color</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/async/">async</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/">db</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/db/mongo/">mongo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/redis/">redis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/design/color/">color</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/task/">task</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/async/">async</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/callback/">callback</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/color/">color</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddd/">ddd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graphql/">graphql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/promise/">promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redis/">redis</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/async/" style="font-size: 10px;">async</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/color/" style="font-size: 10px;">color</a> <a href="/tags/ddd/" style="font-size: 10px;">ddd</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/graphql/" style="font-size: 10px;">graphql</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 20px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/zz/">zz</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/tttt/">tttt</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/github-action/">github-action</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/erl/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Qing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

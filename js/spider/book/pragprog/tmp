@@ -1,0 +1,510 @@
+10:09:54.046 get_name=u=>new URL(u).pathname.split('/')[2]
+b=(f=x=>true)=> [...document.querySelectorAll('li')]
+.filter(f)
+.map(x=>get_name(x.href))
+.split('/'))
+.sort()
+
+10:09:54.088 SyntaxError: unexpected token: ')' debugger eval code:5:11
+10:10:16.199 get_name=u=>new URL(u).pathname.split('/')[2]
+b=(f=x=>true)=> [...document.querySelectorAll('li')]
+.filter(f)
+.map(x=>get_name(x.href))
+.sort()
+
+10:10:16.234
+function b()
+
+10:10:19.432 b()
+10:10:19.473 TypeError: undefined is not a valid URL. debugger eval code:1:13
+10:10:54.743 get_name=u=>new URL(u).pathname.split('/')[2]
+b=(f=x=>true)=> [...document.querySelectorAll('.book-cover-list li')]
+.filter(f)
+.map(x=>get_name(x.href))
+.sort()
+
+10:10:54.795
+function b()
+
+10:10:56.779 b()
+10:10:56.825 TypeError: undefined is not a valid URL. debugger eval code:1:13
+10:11:32.193 get_name=u=>new URL(u).pathname.split('/')[2]
+b=(f=x=>true)=> [...document.querySelectorAll('.book-cover-list li')]
+.filter(f)
+.map(x=>get_name(x.children[0].href))
+.sort()
+
+10:11:32.249
+function b()
+
+10:11:35.497 b()
+10:11:35.535
+Array(179) [ "7apps", "7lang", "7web", "a-fsfire", "a-jkthp", "a-jtrap", "a-kcdc", "a-liftoff", "a-snfocus", "actb2", … ]
+
+10:12:00.241 b(vis)
+10:12:00.284
+(179) […]
+​
+[0…99]
+​
+[100…178]
+​
+length: 179
+​
+<prototype>: Array []
+
+10:12:13.745 vis
+10:12:13.793
+function vis()
+
+10:13:53.318 vis=x=>x.style.display != 'none'
+
+10:13:53.365
+function vis()
+
+10:13:57.613 b(vis)
+10:13:57.704
+Array(6) [ "a-fsfire", "a-jkthp", "a-jtrap", "a-kcdc", "a-liftoff", "a-snfocus" ]
+
+10:16:05.196 s=document.querySelector('[name="title_filter_params[category]"]')
+s.addEventListener('change',()=>{
+    d=s.value
+    b(vis).forEach(x=>books[x].tag.push(d))
+})
+
+10:16:05.213 undefined
+10:16:12.503 all debugger eval code:1:41
+10:16:12.518 TypeError: z[x] is undefined debugger eval code:3:23
+10:16:23.082 audio_books debugger eval code:1:41
+10:16:23.095 TypeError: z[x] is undefined debugger eval code:3:23
+10:16:26.600 beta debugger eval code:1:41
+10:16:29.052 career debugger eval code:1:41
+10:16:31.415 soon debugger eval code:1:41
+10:16:33.581 cmdline debugger eval code:1:41
+10:16:33.587 TypeError: z[x] is undefined debugger eval code:3:23
+10:16:35.640 cool_things debugger eval code:1:41
+10:16:35.643 TypeError: z[x] is undefined debugger eval code:3:23
+10:16:38.184 elixir debugger eval code:1:41
+10:16:40.421 intro_prog debugger eval code:1:41
+10:16:42.534 gaming debugger eval code:1:41
+10:16:45.096 iOS_Android debugger eval code:1:41
+10:16:47.897 java_vm debugger eval code:1:41
+10:16:51.161 new debugger eval code:1:41
+10:16:55.669 pers_prod debugger eval code:1:41
+10:16:55.674 TypeError: z[x] is undefined debugger eval code:3:23
+10:16:59.670 pragmatic_express debugger eval code:1:41
+10:16:59.674 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:04.141 projects debugger eval code:1:41
+10:17:07.931 python debugger eval code:1:41
+10:17:10.880 ruby_and_rails debugger eval code:1:41
+10:17:10.884 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:14.409 screencasts debugger eval code:1:41
+10:17:14.419 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:17.814 7in7 debugger eval code:1:41
+10:17:17.817 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:21.658 practices debugger eval code:1:41
+10:17:21.663 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:25.127 design debugger eval code:1:41
+10:17:25.134 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:42.901 tools debugger eval code:1:41
+10:17:42.908 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:46.062 web20 debugger eval code:1:41
+10:17:46.070 TypeError: z[x] is undefined debugger eval code:3:23
+10:17:53.871 books
+10:17:53.927
+{…}
+​
+7apps: {…}
+​​
+alt: "Cover Image For Seven Mobile Apps in Seven Weeks…"
+​​
+class: "cover-large b-lazy book-cover"
+​​
+"data-id": "445"
+​​
+"data-pubdate": "2016-&07-29"
+​​
+"data-title": "seven mobile apps in seven weeks"
+​​
+downlaod: "http://media.pragprog.com/titles/7apps/code/7apps-code.tgz"
+​​
+height: "144"
+​​
+href: URL { href: "https://pragprog.com/book/7apps/seven-mobile-apps-in-seven-weeks", origin: "https://pragprog.com", protocol: "https:", … }
+​​
+name: "7apps"
+​​
+price: "$26.00 - $50.00"
+​​
+src: "https://imagery.pragprog.com/products/445/7apps_largecover.jpg?1469580888"
+​​
+style: "position: absolute; left: 304px; top: 0px; display: none;"
+​​
+tag: Array(6) [ "all", "audio_books", "iOS_Android", … ]
+​​
+title: "Cover for Seven Mobile Apps in Seven Weeks. Click to pop-up details."
+​​
+width: "120"
+​​
+<prototype>: Object { … }
+​
+7lang: Object { class: "cover-large b-lazy book-cover", "data-id": "410", "data-pubdate": "2014-&11-15", … }
+​
+7web: Object { class: "cover-large b-lazy book-cover", "data-id": "299", "data-pubdate": "2014-&01-15", … }
+​
+"a-fsfire": Object { class: "cover-large b-lazy book-cover", "data-id": "501", "data-pubdate": "2016-&06-14", … }
+​
+"a-jkthp": Object { class: "cover-large b-lazy book-cover", "data-id": "429", "data-pubdate": "2014-&05-29", … }
+​
+"a-jtrap": Object { class: "cover-large b-lazy book-cover", "data-id": "408", "data-pubdate": "2013-&12-10", … }
+​
+"a-kcdc": Object { class: "cover-large b-lazy book-cover", "data-id": "367", "data-pubdate": "2013-&06-21", … }
+​
+"a-liftoff": Object { class: "cover-large b-lazy book-cover", "data-id": "552", "data-pubdate": "2017-&09-15", … }
+​
+"a-snfocus": Object { class: "cover-large b-lazy book-cover", "data-id": "342", "data-pubdate": "2012-&12-12", … }
+​
+actb2: Object { class: "cover-large b-lazy book-cover", "data-id": "571", "data-pubdate": "2019-&07-10", … }
+​
+adrpo: Object { class: "cover-large b-lazy book-cover", "data-id": "425", "data-pubdate": "2015-&11-23", … }
+​
+ager: Object { class: "cover-large b-lazy book-cover", "data-id": "266", "data-pubdate": "2011-&05-01", … }
+​
+ahptl: Object { class: "cover-large b-lazy book-cover", "data-id": "107", "data-pubdate": "2008-&09-15", … }
+​
+algh: Object { class: "cover-large b-lazy book-cover", "data-id": "126", "data-pubdate": "2009-&06-02", … }
+​
+atcrime: Object { class: "cover-large b-lazy book-cover", "data-id": "426", "data-pubdate": "2015-&03-19", … }
+​
+atevol: Object { class: "cover-large b-lazy book-cover", "data-id": "532", "data-pubdate": "2018-&03-09", … }
+​
+bhcldev: Object { class: "cover-large b-lazy book-cover", "data-id": "537", "data-pubdate": "2019-&05-31", … }
+​
+bhgrunt: Object { class: "cover-large b-lazy book-cover", "data-id": "412", "data-pubdate": "2014-&04-30", … }
+​
+bhtmux2: Object { class: "cover-large b-lazy book-cover", "data-id": "510", "data-pubdate": "2016-&11-21", … }
+​
+bhwb: Object { class: "cover-large b-lazy book-cover", "data-id": "461", "data-pubdate": "2015-&09-15", … }
+​
+bksqla: Object { class: "cover-large b-lazy book-cover", "data-id": "167", "data-pubdate": "2010-&06-17", … }
+​
+bopytest: Object { class: "cover-large b-lazy book-cover", "data-id": "498", "data-pubdate": "2017-&09-13", … }
+​
+brapps: Object { class: "cover-large b-lazy book-cover", "data-id": "453", "data-pubdate": "2016-&06-20", … }
+​
+btlang: Object { class: "cover-large b-lazy book-cover", "data-id": "195", "data-pubdate": "2010-&10-27", … }
+​
+caxcode: Object { class: "cover-large b-lazy book-cover", "data-id": "540", "data-pubdate": "2018-&10-17", … }
+​
+"cdc-elixir": Object { class: "cover-large b-lazy book-cover", "data-id": "500", "data-pubdate": "2018-&02-27", … }
+​
+cfcar2: Object { class: "cover-large b-lazy book-cover", "data-id": "137", "data-pubdate": "2009-&05-06", … }
+​
+cjclojure: Object { class: "cover-large b-lazy book-cover", "data-id": "395", "data-pubdate": "2014-&08-20", … }
+​
+cmelixir: Object { class: "cover-large b-lazy book-cover", "data-id": "430", "data-pubdate": "2015-&01-28", … }
+​
+crystal: Object { class: "cover-large b-lazy book-cover", "data-id": "536", "data-pubdate": "2019-&02-01", … }
+​
+csjava2: Object { class: "cover-large b-lazy book-cover", "data-id": "520", "data-pubdate": "2018-&06-05", … }
+​
+"d-cmrest": Object { class: "cover-large b-lazy book-cover", "data-id": "503", "data-pubdate": "2016-&08-10", … }
+​
+"d-devops": Object { class: "cover-large b-lazy book-cover", "data-id": "493", "data-pubdate": "2014-&04-16", … }
+​
+"d-dsswift": Object { class: "cover-large b-lazy book-cover", "data-id": "554", "data-pubdate": "2017-&11-08", … }
+​
+"d-jrlean": Object { class: "cover-large b-lazy book-cover", "data-id": "492", "data-pubdate": "2016-&03-30", … }
+​
+"d-jrpredict": Object { class: "cover-large b-lazy book-cover", "data-id": "455", "data-pubdate": "2015-&06-24", … }
+​
+"d-kegrap": Object { class: "cover-large b-lazy book-cover", "data-id": "434", "data-pubdate": "2014-&07-30", … }
+​
+"d-mbcreq": Object { class: "cover-large b-lazy book-cover", "data-id": "470", "data-pubdate": "2015-&09-09", … }
+​
+"d-rkteams": Object { class: "cover-large b-lazy book-cover", "data-id": "597", "data-pubdate": "2019-&05-15", … }
+​
+dblegacy: Object { class: "cover-large b-lazy book-cover", "data-id": "447", "data-pubdate": "2015-&07-31", … }
+​
+dcbang2: Object { class: "cover-large b-lazy book-cover", "data-id": "508", "data-pubdate": "2017-&06-23", … }
+​
+dhwcr: Object { class: "cover-large b-lazy book-cover", "data-id": "297", "data-pubdate": "2013-&02-06", … }
+​
+dlret: Object { class: "cover-large b-lazy book-cover", "data-id": "75", "data-pubdate": "2006-&07-01", … }
+​
+dnvim2: Object { class: "cover-large b-lazy book-cover", "data-id": "462", "data-pubdate": "2015-&10-31", … }
+​
+dpchat: Object { class: "cover-large b-lazy book-cover", "data-id": "539", "data-pubdate": "2019-&05-10", … }
+​
+dswdcloj2: Object { class: "cover-large b-lazy book-cover", "data-id": "446", "data-pubdate": "2016-&07-15", … }
+​
+dswdcloj3: Object { class: "cover-large b-lazy book-cover", "data-id": "564", "data-pubdate": "2019-&11-10", … }
+​
+dzcnapy: Object { class: "cover-large b-lazy book-cover", "data-id": "541", "data-pubdate": "2018-&01-12", … }
+​
+dzpyds: Object { class: "cover-large b-lazy book-cover", "data-id": "490", "data-pubdate": "2016-&08-11", … }
+​
+eband4: Object { class: "cover-large b-lazy book-cover", "data-id": "282", "data-pubdate": "2015-&05-01", … }
+​
+ec101di: Object { class: "cover-large b-lazy book-cover", "data-id": "315", "data-pubdate": "2013-&07-31", … }
+​
+egmicro: Object { class: "cover-large b-lazy book-cover", "data-id": "561", "data-pubdate": "2019-&06-10", … }
+​
+ehxta: Object { class: "cover-large b-lazy book-cover", "data-id": "284", "data-pubdate": "2013-&02-17", … }
+​
+elixir16: Object { class: "cover-large b-lazy book-cover", "data-id": "557", "data-pubdate": "2018-&05-16", … }
+​
+es6tips: Object { class: "cover-large b-lazy book-cover", "data-id": "533", "data-pubdate": "2018-&04-13", … }
+​
+esswift2: Object { class: "cover-large b-lazy book-cover", "data-id": "565", "data-pubdate": "2019-&03-26", … }
+​
+fbmach: Object { class: "cover-large b-lazy book-cover", "data-id": "544", "data-pubdate": "2019-&01-16", … }
+​
+fhproper: Object { class: "cover-large b-lazy book-cover", "data-id": "551", "data-pubdate": "2019-&01-10", … }
+​
+fsfire: Object { class: "cover-large b-lazy book-cover", "data-id": "308", "data-pubdate": "2014-&11-01", … }
+​
+fugue: Object { class: "cover-large b-lazy book-cover", "data-id": "451", "data-pubdate": "2017-&07-10", … }
+​
+gwpy2: Object { class: "cover-large b-lazy book-cover", "data-id": "336", "data-pubdate": "2013-&09-16", … }
+​
+gwpy3: Object { class: "cover-large b-lazy book-cover", "data-id": "547", "data-pubdate": "2017-&12-10", … }
+​
+hklean: Object { class: "cover-large b-lazy book-cover", "data-id": "271", "data-pubdate": "2011-&12-07", … }
+​
+hwcuc2: Object { class: "cover-large b-lazy book-cover", "data-id": "495", "data-pubdate": "2017-&02-08", … }
+​
+jaerlang2: Object { class: "cover-large b-lazy book-cover", "data-id": "305", "data-pubdate": "2013-&10-05", … }
+​
+javacomp: Object { class: "cover-large b-lazy book-cover", "data-id": "535", "data-pubdate": "2018-&03-21", … }
+​
+jbmaze: Object { class: "cover-large b-lazy book-cover", "data-id": "439", "data-pubdate": "2015-&06-30", … }
+​
+jbtracer: Object { class: "cover-large b-lazy book-cover", "data-id": "528", "data-pubdate": "2019-&02-26", … }
+​
+jcdeg: Object { class: "cover-large b-lazy book-cover", "data-id": "203", "data-pubdate": "2011-&12-01", … }
+​
+jcscrum: Object { class: "cover-large b-lazy book-cover", "data-id": "568", "data-pubdate": "2019-&11-10", … }
+​
+jfelm: Object { class: "cover-large b-lazy book-cover", "data-id": "534", "data-pubdate": "2019-&07-10", … }
+​
+jgade: Object { class: "cover-large b-lazy book-cover", "data-id": "173", "data-pubdate": "2011-&04-06", … }
+​
+jgotp: Object { class: "cover-large b-lazy book-cover", "data-id": "526", "data-pubdate": "2019-&08-10", … }
+​
+jkrp: Object { class: "cover-large b-lazy book-cover", "data-id": "362", "data-pubdate": "2013-&12-02", … }
+​
+jkthp: Object { class: "cover-large b-lazy book-cover", "data-id": "323", "data-pubdate": "2013-&06-21", … }
+​
+jragm: Object { class: "cover-large b-lazy book-cover", "data-id": "513", "data-pubdate": "2017-&10-18", … }
+​
+jrlegios: Object { class: "cover-large b-lazy book-cover", "data-id": "580", "data-pubdate": "2019-&11-10", … }
+​
+jrpm: Object { class: "cover-large b-lazy book-cover", "data-id": "83", "data-pubdate": "2007-&05-01", … }
+​
+jrport2: Object { class: "cover-large b-lazy book-cover", "data-id": "483", "data-pubdate": "2016-&07-29", … }
+​
+jrtest: Object { class: "cover-large b-lazy book-cover", "data-id": "459", "data-pubdate": "2016-&09-16", … }
+​
+jstcp: Object { class: "cover-large b-lazy book-cover", "data-id": "346", "data-pubdate": "2013-&01-18", … }
+​
+jsthreads: Object { class: "cover-large b-lazy book-cover", "data-id": "384", "data-pubdate": "2013-&09-25", … }
+​
+jtrap: Object { class: "cover-large b-lazy book-cover", "data-id": "176", "data-pubdate": "2010-&09-15", … }
+​
+jvrails2: Object { class: "cover-large b-lazy book-cover", "data-id": "353", "data-pubdate": "2013-&12-15", … }
+​
+jwdsal: Object { class: "cover-large b-lazy book-cover", "data-id": "504", "data-pubdate": "2017-&08-07", … }
+​
+jwnode2: Object { class: "cover-large b-lazy book-cover", "data-id": "480", "data-pubdate": "2017-&12-31", … }
+​
+kbogla: Object { class: "cover-large b-lazy book-cover", "data-id": "302", "data-pubdate": "2013-&06-20", … }
+​
+kcdc: Object { class: "cover-large b-lazy book-cover", "data-id": "270", "data-pubdate": "2012-&02-20", … }
+​
+kdnodesec: Object { class: "cover-large b-lazy book-cover", "data-id": "443", "data-pubdate": "2016-&01-10", … }
+​
+khrust: Object { class: "cover-large b-lazy book-cover", "data-id": "574", "data-pubdate": "2019-&03-21", … }
+​
+lfreact: Object { class: "cover-large b-lazy book-cover", "data-id": "456", "data-pubdate": "2017-&08-31", … }
+​
+lhelph: Object { class: "cover-large b-lazy book-cover", "data-id": "471", "data-pubdate": "2018-&01-24", … }
+​
+liftoff: Object { class: "cover-large b-lazy book-cover", "data-id": "450", "data-pubdate": "2016-&06-15", … }
+​
+lmuse2: Object { class: "cover-large b-lazy book-cover", "data-id": "482", "data-pubdate": "2016-&04-15", … }
+​
+lotdd: Object { class: "cover-large b-lazy book-cover", "data-id": "311", "data-pubdate": "2013-&10-30", … }
+​
+ltp2: Object { class: "cover-large b-lazy book-cover", "data-id": "139", "data-pubdate": "2009-&04-01", … }
+​
+maapis: Object { class: "cover-large b-lazy book-cover", "data-id": "570", "data-pubdate": "2019-&11-10", … }
+​
+mbfpp: Object { class: "cover-large b-lazy book-cover", "data-id": "316", "data-pubdate": "2013-&11-10", … }
+​
+mcmath: Object { class: "cover-large b-lazy book-cover", "data-id": "329", "data-pubdate": "2013-&07-15", … }
+​
+mkdsa: Object { class: "cover-large b-lazy book-cover", "data-id": "486", "data-pubdate": "2017-&10-10", … }
+​
+mmteams: Object { class: "cover-large b-lazy book-cover", "data-id": "463", "data-pubdate": "2015-&11-18", … }
+​
+mnee2: Object { class: "cover-large b-lazy book-cover", "data-id": "488", "data-pubdate": "2018-&01-05", … }
+​
+modvim: Object { class: "cover-large b-lazy book-cover", "data-id": "538", "data-pubdate": "2018-&05-01", … }
+​
+mpmob: Object { class: "cover-large b-lazy book-cover", "data-id": "546", "data-pubdate": "2018-&07-11", … }
+​
+msard2: Object { class: "cover-large b-lazy book-cover", "data-id": "422", "data-pubdate": "2015-&01-20", … }
+​
+mskanban: Object { class: "cover-large b-lazy book-cover", "data-id": "409", "data-pubdate": "2015-&06-22", … }
+​
+msraspi2: Object { class: "cover-large b-lazy book-cover", "data-id": "393", "data-pubdate": "2014-&03-10", … }
+​
+mzcd3: Object { class: "cover-large b-lazy book-cover", "data-id": "436", "data-pubdate": "2016-&06-15", … }
+​
+mzswift: Object { class: "cover-large b-lazy book-cover", "data-id": "464", "data-pubdate": "2016-&06-15", … }
+​
+nrtest3: Object { class: "cover-large b-lazy book-cover", "data-id": "523", "data-pubdate": "2018-&02-14", … }
+​
+nrwebpay: Object { class: "cover-large b-lazy book-cover", "data-id": "479", "data-pubdate": "2017-&01-31", … }
+​
+olag: Object { class: "cover-large b-lazy book-cover", "data-id": "217", "data-pubdate": "2011-&01-15", … }
+​
+pad: Object { class: "cover-large b-lazy book-cover", "data-id": "40", "data-pubdate": "2006-&04-01", … }
+​
+pb7con: Object { class: "cover-large b-lazy book-cover", "data-id": "340", "data-pubdate": "2014-&07-10", … }
+​
+pbdp: Object { class: "cover-large b-lazy book-cover", "data-id": "130", "data-pubdate": "2009-&11-04", … }
+​
+pg_git: Object { class: "cover-large b-lazy book-cover", "data-id": "188", "data-pubdate": "2010-&11-01", … }
+​
+pg_sass3: Object { class: "cover-large b-lazy book-cover", "data-id": "487", "data-pubdate": "2016-&07-08", … }
+​
+pg_svn: Object { class: "cover-large b-lazy book-cover", "data-id": "193", "data-pubdate": "2010-&11-01", … }
+​
+phoenix14: Object { class: "cover-large b-lazy book-cover", "data-id": "514", "data-pubdate": "2019-&08-10", … }
+​
+ppanth: Object { class: "cover-large b-lazy book-cover", "data-id": "506", "data-pubdate": "2017-&07-21", … }
+​
+pplearn: Object { class: "cover-large b-lazy book-cover", "data-id": "548", "data-pubdate": "2019-&10-10", … }
+​
+prj: Object { class: "cover-large b-lazy book-cover", "data-id": "43", "data-pubdate": "2005-&06-01", … }
+​
+ptdream: Object { class: "cover-large b-lazy book-cover", "data-id": "356", "data-pubdate": "2013-&11-15", … }
+​
+pwrdata: Object { class: "cover-large b-lazy book-cover", "data-id": "521", "data-pubdate": "2018-&04-06", … }
+​
+rails4: Object { class: "cover-large b-lazy book-cover", "data-id": "196", "data-pubdate": "2013-&09-27", … }
+​
+rails51: Object { class: "cover-large b-lazy book-cover", "data-id": "530", "data-pubdate": "2017-&11-10", … }
+​
+rails6: Object { class: "cover-large b-lazy book-cover", "data-id": "588", "data-pubdate": "2020-&02-10", … }
+​
+rdbcd: Object { class: "cover-large b-lazy book-cover", "data-id": "46", "data-pubdate": "2005-&09-01", … }
+​
+reasonml: Object { class: "cover-large b-lazy book-cover", "data-id": "567", "data-pubdate": "2019-&04-01", … }
+​
+ridocker: Object { class: "cover-large b-lazy book-cover", "data-id": "525", "data-pubdate": "2019-&02-14", … }
+​
+rjnsd: Object { class: "cover-large b-lazy book-cover", "data-id": "363", "data-pubdate": "2015-&02-10", … }
+​
+rkrxjs: Object { class: "cover-large b-lazy book-cover", "data-id": "531", "data-pubdate": "2018-&12-15", … }
+​
+roclojure: Object { class: "cover-large b-lazy book-cover", "data-id": "550", "data-pubdate": "2018-&05-09", … }
+​
+rspec3: Object { class: "cover-large b-lazy book-cover", "data-id": "444", "data-pubdate": "2017-&08-29", … }
+​
+ruby: Object { class: "cover-large b-lazy book-cover", "data-id": "49", "data-pubdate": "2004-&10-01", … }
+​
+ruby4: Object { class: "cover-large b-lazy book-cover", "data-id": "355", "data-pubdate": "2013-&06-18", … }
+​
+rwscala: Object { class: "cover-large b-lazy book-cover", "data-id": "558", "data-pubdate": "2019-&08-10", … }
+​
+rzsecur: Object { class: "cover-large b-lazy book-cover", "data-id": "555", "data-pubdate": "2019-&02-13", … }
+​
+sdcoach: Object { class: "cover-large b-lazy book-cover", "data-id": "150", "data-pubdate": "2009-&08-15", … }
+​
+shcloj3: Object { class: "cover-large b-lazy book-cover", "data-id": "499", "data-pubdate": "2018-&02-21", … }
+​
+smreactjs5: Object { class: "cover-large b-lazy book-cover", "data-id": "515", "data-pubdate": "2018-&02-05", … }
+​
+snfocus: Object { class: "cover-large b-lazy book-cover", "data-id": "190", "data-pubdate": "2009-&11-10", … }
+​
+srjcuc: Object { class: "cover-large b-lazy book-cover", "data-id": "383", "data-pubdate": "2015-&02-15", … }
+​
+swdddf: Object { class: "cover-large b-lazy book-cover", "data-id": "517", "data-pubdate": "2018-&01-10", … }
+​
+swperl: Object { class: "cover-large b-lazy book-cover", "data-id": "458", "data-pubdate": "2015-&10-21", … }
+​
+tbajs: Object { class: "cover-large b-lazy book-cover", "data-id": "317", "data-pubdate": "2012-&11-28", … }
+​
+tbcoffee2: Object { class: "cover-large b-lazy book-cover", "data-id": "400", "data-pubdate": "2015-&02-07", … }
+​
+tbreact: Object { class: "cover-large b-lazy book-cover", "data-id": "566", "data-pubdate": "2019-&06-05", … }
+​
+thsound: Object { class: "cover-large b-lazy book-cover", "data-id": "357", "data-pubdate": "2014-&01-20", … }
+​
+tpantlr: Object { class: "cover-large b-lazy book-cover", "data-id": "84", "data-pubdate": "2007-&05-01", … }
+​
+tpantlr2: Object { class: "cover-large b-lazy book-cover", "data-id": "256", "data-pubdate": "2013-&01-15", … }
+​
+tpdsl: Object { class: "cover-large b-lazy book-cover", "data-id": "160", "data-pubdate": "2009-&12-28", … }
+​
+tpp20: Object { class: "cover-large b-lazy book-cover", "data-id": "595", "data-pubdate": "2019-&09-15", … }
+​
+trevan: Object { class: "cover-large b-lazy book-cover", "data-id": "183", "data-pubdate": "2010-&11-09", … }
+​
+tsgit: Object { class: "cover-large b-lazy book-cover", "data-id": "109", "data-pubdate": "2008-&12-17", … }
+​
+tvmelixir: Object { class: "cover-large b-lazy book-cover", "data-id": "527", "data-pubdate": "2018-&03-14", … }
+​
+utc2: Object { class: "cover-large b-lazy book-cover", "data-id": "52", "data-pubdate": "2007-&08-15", … }
+​
+utj2: Object { class: "cover-large b-lazy book-cover", "data-id": "421", "data-pubdate": "2015-&03-16", … }
+​
+"v-d-cukevidj": Object { class: "cover-large b-lazy book-cover", "data-id": "478", "data-pubdate": "2015-&10-09", … }
+​
+"v-d-cukevidr": Object { class: "cover-large b-lazy book-cover", "data-id": "475", "data-pubdate": "2015-&09-29", … }
+​
+"v-dtrubyom": Object { class: "cover-large b-lazy book-cover", "data-id": "122", "data-pubdate": "2008-&12-26", … }
+​
+"v-jacloud": Object { class: "cover-large b-lazy book-cover", "data-id": "334", "data-pubdate": "2012-&10-23", … }
+​
+"v-jamapr": Object { class: "cover-large b-lazy book-cover", "data-id": "378", "data-pubdate": "2013-&07-24", … }
+​
+"v-kbtdd": Object { class: "cover-large b-lazy book-cover", "data-id": "223", "data-pubdate": "2010-&06-24", … }
+​
+"v-mrst2": Object { class: "cover-large b-lazy book-cover", "data-id": "347", "data-pubdate": "2012-&12-18", … }
+​
+"v-roerlang": Object { class: "cover-large b-lazy book-cover", "data-id": "572", "data-pubdate": "2018-&06-13", … }
+​
+vbopens: Object { class: "cover-large b-lazy book-cover", "data-id": "542", "data-pubdate": "2018-&10-10", … }
+​
+vcc: Object { class: "cover-large b-lazy book-cover", "data-id": "58", "data-pubdate": "2003-&09-01", … }
+​
+ves6: Object { class: "cover-large b-lazy book-cover", "data-id": "529", "data-pubdate": "2018-&06-10", … }
+​
+vmclojeco: Object { class: "cover-large b-lazy book-cover", "data-id": "411", "data-pubdate": "2015-&09-01", … }
+​
+vsjava8: Object { class: "cover-large b-lazy book-cover", "data-id": "343", "data-pubdate": "2014-&02-28", … }
+​
+vsjavas: Object { class: "cover-large b-lazy book-cover", "data-id": "472", "data-pubdate": "2016-&10-05", … }
+​
+vskotlin: Object { class: "cover-large b-lazy book-cover", "data-id": "577", "data-pubdate": "2019-&07-10", … }
+​
+vslg2: Object { class: "cover-large b-lazy book-cover", "data-id": "295", "data-pubdate": "2013-&07-15", … }
+​
+vspcon: Object { class: "cover-large b-lazy book-cover", "data-id": "227", "data-pubdate": "2011-&07-25", … }
+​
+vsscala2: Object { class: "cover-large b-lazy book-cover", "data-id": "399", "data-pubdate": "2015-&09-18", … }
+​
+wbdev2: Object { class: "cover-large b-lazy book-cover", "data-id": "442", "data-pubdate": "2015-&07-22", … }
+​
+wmecto: Object { class: "cover-large b-lazy book-cover", "data-id": "524", "data-pubdate": "2019-&04-10", … }
+​
+wwgraphql: Object { class: "cover-large b-lazy book-cover", "data-id": "519", "data-pubdate": "2018-&03-27", … }
+​
+<prototype>: Object { … }
+
+10:18:31.221 copy(JSON.stringify(books,null,'\t'))
+

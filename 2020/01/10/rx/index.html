@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <!--base target="_blank" /-->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="referrer" content="never">
+  <meta name="keywords" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/346/346195.png" type="image/x-icon">
+
+
+  <link href="https://spin.js.org/spin.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+<link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.css" rel="stylesheet">
+  <link href="/css/grid.css" type="text/css" rel="stylesheet">
+  <link href="/css/blog.css" type="text/css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdn.bootcss.com/localforage/1.7.3/localforage.min.js"></script>
+  <script src="https://cdn.bootcss.com/ramda/0.26.1/ramda.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.16.1/lodash.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.bootcss.com/superagent/4.1.0-beta.1/superagent.min.js"></script>
+  <script src="https://cdn.bootcss.com/rxjs/6.5.2/rxjs.umd.min.js"></script>
+  <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.js"></script>
+  
+  <script src="https://cdn.bootcss.com/pixi.js/5.0.4/pixi.min.js"></script>
+  <script src="https://cdn.bootcss.com/d3/5.9.7/d3.min.js"></script>
+  <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+  <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+  <script src="https://cdn.bootcss.com/push.js/1.0.9/push.min.js"></script>
+  <script src="https://cdn.bootcss.com/linq.js/2.2.0.2/linq.min.js"></script>
+  <script src="https://cdn.bootcss.com/tensorflow/1.2.2/tf.min.js"></script>
+  <script src="https://cdn.bootcss.com/typescript/3.5.3/typescript.min.js"></script>
+  <script src="https://cdn.bootcss.com/reflect-metadata/0.1.13/Reflect.min.js"></script>
+  <script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.dev.js"></script>
+  <script src="https://cdn.bootcss.com/immutable/4.0.0-rc.12/immutable.min.js"></script>
+  <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.min.js"></script>
+  <script src="/js/blog.js" type="module"></script>
+
+
+  <!--%- partial('google-analytics') %-->
+  
+  <title>blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="https://rxjs.dev/api/operators/ s=fromEvent(document, ‘click’) interval(1000) from([1,2,3]).pipe(map(x=&amp;gt;x+1)).subscribe(console.log) s.pipe(    throttleTime(1000),    scan(count =&amp;gt; count + 1, 0)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blog">
+<meta property="og:url" content="https://birdsofsummer.github.io/2020/01/10/rx/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="https://rxjs.dev/api/operators/ s=fromEvent(document, ‘click’) interval(1000) from([1,2,3]).pipe(map(x=&amp;gt;x+1)).subscribe(console.log) s.pipe(    throttleTime(1000),    scan(count =&amp;gt; count + 1, 0)">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-01-10T10:20:08.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blog">
+<meta name="twitter:description" content="https://rxjs.dev/api/operators/ s=fromEvent(document, ‘click’) interval(1000) from([1,2,3]).pipe(map(x=&amp;gt;x+1)).subscribe(console.log) s.pipe(    throttleTime(1000),    scan(count =&amp;gt; count + 1, 0)">
+  
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <!--link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://birdsofsummer.github.io"></form>
+      </div>
+    </div>
+  </div>
+  <section class="loading"><section>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-rx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/10/rx/" class="article-date">
+  <time datetime="2020-01-10T10:20:08.385Z" itemprop="datePublished">2020-01-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://rxjs.dev/api/operators/" target="_blank" rel="noopener">https://rxjs.dev/api/operators/</a></p>
+<p>s=fromEvent(document, ‘click’)</p>
+<p>interval(1000)</p>
+<p>from([1,2,3])<br>.pipe(map(x=&gt;x+1))<br>.subscribe(console.log)</p>
+<p>s<br>.pipe(<br>    throttleTime(1000),<br>    scan(count =&gt; count + 1, 0)<br>)<br>.subscribe(count =&gt; console.log(<code>Clicked ${count} times</code>));</p>
+<p>s<br>.pipe(<br>  map(ev =&gt; interval(Math.random() * 2000).pipe(take(3))),<br>  take(2)<br>)<br>.pipe(<br>  combineAll()<br>)<br>.subscribe(x =&gt; console.log(x))</p>
+<p>s<br>.pipe(map(e=&gt;”eee”))<br>.subscribe(console.log)</p>
+<p>s<br>.pipe(take(5))<br>.subscribe(console.log)</p>
+<p>of(1,2,3)<br>.pipe(map(x=&gt;x+10),toArray())<br>.subscribe(say(‘zzz’))</p>
+<p>from([1,2,3])<br>.pipe(<br>     filter(x=&gt;x&gt;1),<br>     map(x=&gt;x+10),<br>     scan((a,b)=&gt;a+b,0),<br>     toArray()<br> )<br>.subscribe(say(‘zzz’))</p>
+<p>f=() =&gt; Math.random() * 2000</p>
+<p>d=d3.range(100)<br>from(d)<br>.pipe(<br>    //mapTo(f()),<br>    map(f),<br>    //scan((acc, one) =&gt; acc + one, 0),<br>    scan((acc, one) =&gt;[…acc,one] , []),<br>    toArray(),<br>)<br>.subscribe(x =&gt; console.log(x))</p>
+<p>s<br>.pipe(first(ev =&gt; ev.target.tagName === ‘DIV’))<br>.subscribe(console.log)</p>
+<p>from(d3.range(100))<br>.pipe(last((v,i)=&gt;i&lt;10))<br>.subscribe(say(‘zzz’))</p>
+<p>a=of(<br>  {id: 1, name: ‘JavaScript’},<br>  {id: 2, name: ‘Parcel’},<br>  {id: 2, name: ‘webpack’},<br>  {id: 1, name: ‘TypeScript’},<br>  {id: 3, name: ‘TSLint’}<br>)</p>
+<p>a.pipe(<br>    groupBy((x,i)=&gt;x.name),<br>    mergeMap(<br>        x=&gt;x.pipe(<br>                reduce((a,b)=&gt;[…a,b],[])<br>            )<br>    )<br>)<br>.subscribe(say(‘dd’))</p>
+<p> of(10)<br> .pipe(<br>     expand(x=&gt;of(x+10)),<br>     take(20)<br> )<br> .subscribe(say(‘ddd’))</p>
+<p>range(10)<br>.pipe(<br>  mapTo(1),<br>  mergeScan((acc, one) =&gt; of(acc + one), 0),<br>)<br>.subscribe(say(‘ddd’))</p>
+<p>ss= x =&gt; interval(1000)<br>.pipe(<br>    map(i =&gt; x+i)<br>)</p>
+<p>of(‘a’, ‘b’, ‘c’)<br>.pipe(<br>  mergeMap(ss),<br>)<br>.subscribe(console.log)</p>
+<p>s<br>.pipe(bufferCount(5))<br>.subscribe(console.log)</p>
+<p>//交错<br>s.<br>.pipe(bufferCount(2, 1))<br>.subscribe(x =&gt; console.log(x))</p>
+<p>interval(1000)<br>.pipe(buffer(s))<br>.subscribe(say(‘buffer’))</p>
+<p>s<br>.pipe(<br>    mapTo(1),<br>    bufferTime(1000),</p>
+<p>)<br>.subscribe(say(‘buffertime’))</p>
+<p>s.pipe(<br>    mapTo(1),<br>    bufferTime(2000, 5000),<br>)<br>.subscribe(say(‘bbbb’));</p>
+<p>t=()=&gt;1000 + Math.random() * 4000</p>
+<p>s.pipe(<br>    mapTo(1),<br>    bufferWhen(() =&gt;<br>      interval(1e4)<br>    )<br>)<br>.subscribe(say(‘when’));</p>
+<p>s.pipe(<br>  windowCount(3),<br>  map(win =&gt; win.pipe(skip(1))),<br>  mergeAll()<br>)<br>.subscribe(say(‘wincount’))</p>
+<p>s.pipe(<br>  windowCount(2, 3),<br>  mergeAll(),<br>)<br>.subscribe(say(‘2,3’))</p>
+<p> s.pipe(<br>     operators.window(interval(1000)),<br>     map(win =&gt; win.pipe(take(2))),<br>     mergeAll(),<br> )<br> .subscribe(say(“window”))</p>
+<p>s<br>.pipe(pairwise())<br>.pipe(<br>  map(pair =&gt; {<br>    const x0 = pair[0].clientX;<br>    const y0 = pair[0].clientY;<br>    const x1 = pair[1].clientX;<br>    const y1 = pair[1].clientY;<br>    return Math.sqrt(Math.pow(x0 - x1, 2) + Math.pow(y0 - y1, 2));<br>  }),<br>)<br>.subscribe(say(‘distance’))</p>
+<p>s<br>.pipe(partition(ev =&gt; ev.target.tagName === ‘DIV’))<br>.map((z,i)=&gt;z.subscribe(say(‘partition’+i)))</p>
+<p>f=val =&gt; val &gt;5 ? throwError(‘Error!’) :of(val)</p>
+<p>f=async ()=&gt;{<br>    r=await fetch(‘/abc’)<br>    return r.ok ? of(123) : throwError(‘ddd’)<br>}</p>
+<p>interval(1000)<br>.pipe(<br>      mergeMap(f),<br>      retry(2)<br>)<br>.subscribe({<br>  next: say(‘next’),<br>  error: say(‘error’),<br>})</p>
+<p>of(1, 1, 2, 2, 2, 1, 2, 3, 4, 3, 2, 1).pipe(<br>    distinct(),<br>  )<br>.subscribe(x =&gt; console.log(x))</p>
+<p> of(<br>    { age: 4, name: ‘Foo’},<br>    { age: 7, name: ‘Bar’},<br>    { age: 5, name: ‘Foo’},<br>  ).pipe(<br>    distinct(p =&gt; p.name), //整体不重复<br>//    distinctUntilChanged((p,q) =&gt; p.name === q.name), //相邻不重复<br>//    distinctUntilKeyChanged(‘name’),<br>//    distinctUntilKeyChanged(‘name’, (x,y) =&gt; x.substring(0, 3) === y.substring(0, 3)),<br>  )<br>  .subscribe(x =&gt; console.log(x));</p>
+<p>  of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4).pipe(<br>    distinctUntilChanged(),<br>  )<br>  .subscribe(x =&gt; console.log(x)); // 1, 2, 1, 2, 3, 4</p>
+<p>interval(1000)<br>.pipe(sample(s))<br>.subscribe(say(‘sample’))</p>
+<p>s<br>.pipe(<br>    audit(ev =&gt; interval(1000))<br>)<br>.subscribe(say(‘audit’))</p>
+<p>s.pipe(<br>    debounce(() =&gt; interval(1000))<br>)<br>.subscribe(say(‘debounce’))</p>
+<p>s<br>.pipe(<br>    mapTo(of(123)),<br>    throttle(ev =&gt; interval(1000)),<br>    mergeAll(),<br>)<br>.subscribe(say(‘throttle’))</p>
+<p>s<br>.pipe(map((ev) =&gt; interval(1000)))<br>.pipe(mergeAll())<br>.subscribe(say(‘mergeAll’))</p>
+<p>s<br>.pipe(<br>  map((ev) =&gt; interval(1000).pipe(take(10))),<br>)<br>.pipe(mergeAll(2));<br>.subscribe(say(‘mergeAll(2)’))</p>
+<p>s.pipe(<br>  map(ev =&gt; interval(1000).pipe(take(4))),<br>)<br>.pipe(concatAll())<br>.subscribe(say(‘concatAll’))</p>
+<p>s<br>.pipe(tap(say(‘click’)))<br>.pipe(map((ev) =&gt; interval(1000)))<br>.pipe(<br>  switchAll()<br>)<br>.subscribe(say(‘switchall’))</p>
+<p>of(1, 2, 3)<br>.pipe(switchMap(x=&gt; of(x, x ** 2, x ** 3)))<br>.subscribe(say(‘switchMap’))</p>
+<p>s<br>.pipe(<br>    switchMap((ev) =&gt; interval(1000))<br>)<br>.subscribe(say(‘switchMap’))</p>
+<p>s.pipe(<br>  map((ev) =&gt; interval(1000).pipe(take(5))),<br>)<br>.pipe(exhaust())<br>.subscribe(say(‘exhaust’))</p>
+<p>s.pipe(<br>  concatMapTo(interval(1000).pipe(take(4))),<br>)<br>.subscribe(say(‘concatmap’))</p>
+<p>s.pipe(<br>  map(ev =&gt; interval(Math.random() * 2000).pipe(take(3))),<br>  take(2)<br>)<br>.pipe(<br>  combineAll()<br>)<br>.subscribe(say(‘combineall’))</p>
+<p>s<br>.pipe(sampleTime(1000))<br>.subscribe(say(‘st’))</p>
+<p>s<br>.pipe(auditTime(1000))<br>.subscribe(say(‘at’))</p>
+<p>s<br>.pipe(debounceTime(1000))<br>.subscribe(say(‘dt’))</p>
+<p>s<br>.pipe(throttleTime(1000))<br>.subscribe(say(‘tt’))</p>
+<p>s<br>.pipe(<br>  throttleTime(400, asyncScheduler,<br>      {<br>      leading: false,<br>      trailing: true<br>    }<br>)<br>)<br>.subscribe(say(‘tt1’))</p>
+<p>s<br>.pipe(delay(1000))<br>.subscribe(say(‘delay’))</p>
+<p>const date = new Date(‘March 15, 2050 12:00:00’)</p>
+<p>s<br>.pipe(delay(date))<br>.subscribe(say(‘future’))</p>
+<p>s.pipe(<br>  delayWhen(event =&gt; interval(Math.random() * 5000)),<br>)<br>.subscribe(say(“delay when”))</p>
+<p>of(‘a’, ‘b’, ‘c’)<br>.pipe(<br>  mergeMap(x =&gt; interval(1000).pipe(map(i =&gt; x+i))),<br>)<br>.subscribe(say(‘mm’))</p>
+<p>s<br>.pipe(find(ev =&gt; ev.target.tagName === ‘DIV’))<br>.subscribe(x =&gt; console.log(x))</p>
+<p>s<br>.pipe(findIndex(ev =&gt; ev.target.tagName === ‘DIV’))<br>.subscribe(x =&gt; console.log(x))</p>
+<p>interval(1000)<br>.pipe(timeinterval())<br>.subscribe(<br>    value =&gt; console.log(value),<br>    err =&gt; console.log(err),<br>);</p>
+<p>interval(1000)<br>.pipe(timeout(900))<br>.subscribe(<br>    value =&gt; console.log(value),<br>    err =&gt; console.log(err),<br>)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://birdsofsummer.github.io/2020/01/10/rx/" data-id="ck580fkpp000l81mcgybxhh67" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/01/10/indexed_db/promise/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/10/indexed_db/index/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/async/">async</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/">db</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/db/mongo/">mongo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/redis/">redis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/design/color/">color</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/task/">task</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/async/">async</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/callback/">callback</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/color/">color</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddd/">ddd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graphql/">graphql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/promise/">promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redis/">redis</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/async/" style="font-size: 10px;">async</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/color/" style="font-size: 10px;">color</a> <a href="/tags/ddd/" style="font-size: 10px;">ddd</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/graphql/" style="font-size: 10px;">graphql</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 20px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/zz/">zz</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/tttt/">tttt</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/github-action/">github-action</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/erl/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Qing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

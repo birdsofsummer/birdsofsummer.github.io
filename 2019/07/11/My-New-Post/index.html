@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <!--base target="_blank" /-->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="referrer" content="never">
+  <meta name="keywords" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/346/346195.png" type="image/x-icon">
+
+
+  <link href="https://spin.js.org/spin.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+<link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.css" rel="stylesheet">
+  <link href="/css/grid.css" type="text/css" rel="stylesheet">
+  <link href="/css/blog.css" type="text/css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdn.bootcss.com/localforage/1.7.3/localforage.min.js"></script>
+  <script src="https://cdn.bootcss.com/ramda/0.26.1/ramda.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.16.1/lodash.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.bootcss.com/superagent/4.1.0-beta.1/superagent.min.js"></script>
+  <script src="https://cdn.bootcss.com/rxjs/6.5.2/rxjs.umd.min.js"></script>
+  <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.js"></script>
+  
+  <script src="https://cdn.bootcss.com/pixi.js/5.0.4/pixi.min.js"></script>
+  <script src="https://cdn.bootcss.com/d3/5.9.7/d3.min.js"></script>
+  <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+  <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+  <script src="https://cdn.bootcss.com/push.js/1.0.9/push.min.js"></script>
+  <script src="https://cdn.bootcss.com/linq.js/2.2.0.2/linq.min.js"></script>
+  <script src="https://cdn.bootcss.com/tensorflow/1.2.2/tf.min.js"></script>
+  <script src="https://cdn.bootcss.com/typescript/3.5.3/typescript.min.js"></script>
+  <script src="https://cdn.bootcss.com/reflect-metadata/0.1.13/Reflect.min.js"></script>
+  <script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.dev.js"></script>
+  <script src="https://cdn.bootcss.com/immutable/4.0.0-rc.12/immutable.min.js"></script>
+  <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.min.js"></script>
+  <script src="/js/blog.js" type="module"></script>
+
+
+  <!--%- partial('google-analytics') %-->
+  
+  <title>My New Post | blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="A First Level HeaderA Second Level HeaderNow is the time for all good men to come tothe aid of their country. This is just aregular paragraph. The quick brown fox jumped over the lazydog’s back. Heade">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My New Post">
+<meta property="og:url" content="https://birdsofsummer.github.io/2019/07/11/My-New-Post/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="A First Level HeaderA Second Level HeaderNow is the time for all good men to come tothe aid of their country. This is just aregular paragraph. The quick brown fox jumped over the lazydog’s back. Heade">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://hbimg.huabanimg.com/57865414bc230edddb4797bd51fa94ce2afbeaeceea83-tE0MND_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658">
+<meta property="og:image" content="https://birdsofsummer.github.io/path/to/img.jpg">
+<meta property="og:image" content="https://birdsofsummer.github.io/path/to/img.jpg">
+<meta property="og:image" content="https://hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/15e3752862027f48dac9dde28773060c66b56a8f26c6a-cX0s76_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/50bbcda6600c2e145b96af5c8c19f0692e3654ec2569f-O9uud7_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/db21f9e43f26bce3939bcb7505650e0fa341d3662ca4d-QNoWzk_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/8e1c4b029f493f8da42de4b87aa12e4340a1526b2a211-HLYrMM_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/1a0ff41a1df01347476e7bf4f751726506977a4026c4c-u5JrzF_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/1405cd5420993e491c729ff0554658a117f810499a8d1-FuDiPF_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/57865414bc230edddb4797bd51fa94ce2afbeaeceea83-tE0MND_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/f1cb60eb3c94321b12c0cade91aea44d002ba05bcca73-dy4eWz_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/cbcf54521192c068a0b4baf1918f759816cddd4f1f38e-vsVdLg_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/6f703b7f3ea5e0db7e059657a5aa68062c1bd5804b6b9-3EXWLZ_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/ac860d8af5b68e57d585a4ed1cf8ac2c47b565ce80d78-uUFdz7_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/0e26c4e4722eb667cdfdd86412b28a38d486e3a3dcc8f-jfT2lp_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/d1b0b464d2eff0c778b75b24aabae81e8bf13f4faaaee-WYMNd3_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/49dde27b9b57092af600fb5edd19725a42b300f81a2b5-1QzaMC_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/a9989bebbbecb032f986d4bd648b4a8449828bdd21bac-yqE2A5_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/52f9f833d8d89514ba5d2f1e0ec74282bbc5eb6a40ab4-7ppc1F_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/0fa664deef2a3ce1bb48e5c21f95951df81858d51fd13-L2n8ZS_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/0076f604eac7be832a8b0f2c485f77b5269a64502db5c-x5zLdJ_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/f0595ba0375d377ecb19317b87e1a3426f91ad4f1e2510-jAbn1J_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/67f653e4c6e4545ac83c6dd8f1d24293e593b9d522d4b-kWoW5J_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/4b4ce3c1d8cebd16404367e3e3d684a690e77f50500d9-mhG1OY_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/0b4c81a15e4f46e9724cd58b702713836aef2c154aae5-eMirA7_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/0ebd48d8f1e8f223582929376d272ce59ee20e0a3a671-J0HPic_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/6695f7c4e27ec84b49f47517a15c1fa5f0d9f6022cab2-t0lRuy_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/2404965481c26c0d479bb5c2291b0c1b1d803957118908-8Lvumv_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/d4a604d2d2109de520d52e5fe84847a9edeb4cbf26f69-7QZmGA_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/caa5fba632ef0a90ca4d1bfb4971aa0c6bbb6dbb14ce7-pYIkWP_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/47602f760861c73e9cfec49ef64edb44290ecb7526b63-19OqQ8_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/831c20835a8e3327f18e3e2dc7a9d4560a3e287a281ab-B78Y2J_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/5a0867a0dbfb8b1565fb3e7b0301eb325051ad0b1517dd-X2AF3d_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/5913ed792e6d24956f0d47263f83ba6646e4f2629a572-ue3YUk_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/898f4f5996d5e3d462deeadfae8477d9f564d4a01be125-WLYOdo_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/c453d4e240b595cfd26e74c014eaab32b52343942d886-duhwUY_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/aa0d528c729000d93a614a79e8e60f30d6838bc11c187-tDcHUA_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/89e8cc038486ed15ea4f85d6bc50f849de832906342bc-yD9u6U_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/a80810e3695f095622fc8e3b3f4edb0676d1ff0021412e-w8nrvV_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/1f2c862089f8580abd93fb7e85fef540d3c74f0e6b718-usuX0U_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/e403b041ab21a38d23b95efb6f434d718eeab370130b8-cS8PWO_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/e2357c763ead0051951d470e80ba2c1bfc21327226b77-2NvRYf_fw658">
+<meta property="og:image" content="https://hbimg.huabanimg.com/cbf6c8a0e9e4ccf29e7469b26d203ed5d80f49073d585-ooshmN_fw658">
+<meta property="og:image" content="https://birdsofsummer.github.io/images/1.jpg">
+<meta property="og:updated_time" content="2020-01-10T10:20:08.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="My New Post">
+<meta name="twitter:description" content="A First Level HeaderA Second Level HeaderNow is the time for all good men to come tothe aid of their country. This is just aregular paragraph. The quick brown fox jumped over the lazydog’s back. Heade">
+<meta name="twitter:image" content="https://hbimg.huabanimg.com/57865414bc230edddb4797bd51fa94ce2afbeaeceea83-tE0MND_fw658">
+  
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <!--link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://birdsofsummer.github.io"></form>
+      </div>
+    </div>
+  </div>
+  <section class="loading"><section>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/11/My-New-Post/" class="article-date">
+  <time datetime="2019-07-11T08:49:23.000Z" itemprop="datePublished">2019-07-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      My New Post
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="A-First-Level-Header"><a href="#A-First-Level-Header" class="headerlink" title="A First Level Header"></a>A First Level Header</h1><h2 id="A-Second-Level-Header"><a href="#A-Second-Level-Header" class="headerlink" title="A Second Level Header"></a>A Second Level Header</h2><p>Now is the time for all good men to come to<br>the aid of their country. This is just a<br>regular paragraph.</p>
+<p>The quick brown fox jumped over the lazy<br>dog’s back.</p>
+<h3 id="Header-3"><a href="#Header-3" class="headerlink" title="Header 3"></a>Header 3</h3><blockquote>
+<p>This is a blockquote.</p>
+<p>This is the second paragraph in the blockquote.</p>
+<h2 id="This-is-an-H2-in-a-blockquote"><a href="#This-is-an-H2-in-a-blockquote" class="headerlink" title="This is an H2 in a blockquote"></a>This is an H2 in a blockquote</h2></blockquote>
+<p>Some of these words <em>are emphasized</em>.<br>Some of these words <em>are emphasized also</em>.</p>
+<p>Use two asterisks for <strong>strong emphasis</strong>.<br>Or, if you prefer, <strong>use two underscores instead</strong>.</p>
+<p>Lists</p>
+<p>Unordered (bulleted) lists use asterisks, pluses, and hyphens (*, +, and -) as list markers. These three markers are interchangable; this:</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+<p>this:</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+<p>and this:</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+<ol>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ol>
+<ul>
+<li><p>A list item.</p>
+<p>With multiple paragraphs.</p>
+</li>
+<li><p>Another item in the list.</p>
+</li>
+</ul>
+<p><a href="https://daringfireball.net/projects/markdown/basics/" title="With a Title" target="_blank" rel="noopener">example link</a>.</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="noopener">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a>.</p>
+<p>I start my morning with a cup of coffee and<br><a href="http://www.nytimes.com/" target="_blank" rel="noopener">The New York Times</a>.</p>
+<p><img src="https://hbimg.huabanimg.com/57865414bc230edddb4797bd51fa94ce2afbeaeceea83-tE0MND_fw658" alt="alt text" title="Title"></p>
+<p><img src="//hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658" alt="alt text" title="Title"></p>
+<p>I strongly recommend against using any <code>&lt;blink&gt;</code> tags.</p>
+<p>I wish SmartyPants used named entities like <code>&amp;mdash;</code><br>instead of decimal-encoded entites like <code>&amp;#8212;</code>.</p>
+<p>If you want your page to validate under XHTML 1.0 Strict,<br>you’ve got to put paragraph tags in your blockquotes:</p>
+<pre><code>&lt;blockquote&gt;
+    &lt;p&gt;For example.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> add=<span class="function">(<span class="params">a,b</span>)=&gt;</span>a+b</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(a,b)</span>:</span></span><br><span class="line">   <span class="keyword">return</span> a+b</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(x,y)</span></span><span class="symbol">:</span></span><br><span class="line">  x+y</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span><span class="params">($a,$b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $a+$b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">use</span> ferris_says::say; <span class="comment">// from the previous step</span></span><br><span class="line"><span class="keyword">use</span> std::io::&#123;stdout, BufWriter&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> stdout = stdout();</span><br><span class="line">    <span class="keyword">let</span> out = <span class="string">b"Hello fellow Rustaceans!"</span>;</span><br><span class="line">    <span class="keyword">let</span> width = <span class="number">24</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> writer = BufWriter::new(stdout.lock());</span><br><span class="line">    say(out, width, &amp;<span class="keyword">mut</span> writer).unwrap();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">primes</span> = filterPrime [<span class="number">2.</span>.]</span><br><span class="line">  <span class="keyword">where</span> filterPrime (p:xs) =</span><br><span class="line">          p : filterPrime [x | x &lt;- xs, x `mod` p /= <span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">-module</span><span class="params">(tut)</span>.</span><br><span class="line"><span class="keyword">-export</span><span class="params">([double/<span class="number">1</span>])</span>.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">double</span><span class="params">(X)</span> -&gt;</span></span><br><span class="line">    <span class="number">2</span> * X.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">current_process = <span class="keyword">self</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Spawn an Elixir process (not an operating system one!)</span></span><br><span class="line">spawn_link(<span class="keyword">fn</span> -&gt;</span><br><span class="line">  send(current_process, &#123;<span class="symbol">:msg</span>, <span class="string">"hello world"</span>&#125;)</span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Block until the message is received</span></span><br><span class="line">receive <span class="keyword">do</span></span><br><span class="line">  &#123;<span class="symbol">:msg</span>, contents&#125; -&gt; IO.puts(contents)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="This-is-an-H1"><a href="#This-is-an-H1" class="headerlink" title="This is an H1"></a>This is an H1</h1><h2 id="This-is-an-H2"><a href="#This-is-an-H2" class="headerlink" title="This is an H2"></a>This is an H2</h2><h1 id="This-is-an-H1-1"><a href="#This-is-an-H1-1" class="headerlink" title="This is an H1"></a>This is an H1</h1><h2 id="This-is-an-H2-1"><a href="#This-is-an-H2-1" class="headerlink" title="This is an H2"></a>This is an H2</h2><h3 id="This-is-an-H3"><a href="#This-is-an-H3" class="headerlink" title="This is an H3"></a>This is an H3</h3><h4 id="This-is-an-H4"><a href="#This-is-an-H4" class="headerlink" title="This is an H4"></a>This is an H4</h4><h5 id="This-is-an-H5"><a href="#This-is-an-H5" class="headerlink" title="This is an H5"></a>This is an H5</h5><h6 id="This-is-an-H6"><a href="#This-is-an-H6" class="headerlink" title="This is an H6"></a>This is an H6</h6><blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<blockquote>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+<p>Blockquotes can contain other Markdown elements, including headers, lists, and code blocks:</p>
+<blockquote>
+<h2 id="This-is-a-header"><a href="#This-is-a-header" class="headerlink" title="This is a header."></a>This is a header.</h2><ol>
+<li>This is the first list item.</li>
+<li>This is the second list item.</li>
+</ol>
+<p>Here’s some example code:</p>
+<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);</code></pre></blockquote>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.<br>Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.<br>Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+<li>Bird</li>
+<li>Magic</li>
+</ul>
+<p>But this:</p>
+<ul>
+<li><p>Bird</p>
+</li>
+<li><p>Magic</p>
+</li>
+</ul>
+<p>will turn into:</p>
+<ul>
+<li><p>Bird</p></li>
+<li><p>Magic</p></li>
+</ul>
+
+<p>List items may consist of multiple paragraphs. Each subsequent paragraph in a list item must be indented by either 4 spaces or one tab:</p>
+<ol>
+<li><p>This is a list item with two paragraphs. Lorem ipsum dolor<br>sit amet, consectetuer adipiscing elit. Aliquam hendrerit<br>mi posuere lectus.</p>
+<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet<br>vitae, risus. Donec sit amet nisl. Aliquam semper ipsum<br>sit amet velit.</p>
+</li>
+<li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</li>
+</ol>
+<p>It looks nice if you indent every line of the subsequent paragraphs, but here again, Markdown will allow you to be lazy:</p>
+<ul>
+<li><p>This is a list item with two paragraphs.</p>
+<p>This is the second paragraph in the list item. You’re<br>only required to indent the first line. Lorem ipsum dolor<br>sit amet, consectetuer adipiscing elit.</p>
+</li>
+<li><p>Another item in the same list.</p>
+</li>
+</ul>
+<p>To put a blockquote within a list item, the blockquote’s &gt; delimiters need to be indented:</p>
+<ul>
+<li><p>A list item with a blockquote:</p>
+<blockquote>
+<p>This is a blockquote<br>inside a list item.</p>
+</blockquote>
+</li>
+</ul>
+<p>To put a code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs:</p>
+<ul>
+<li><p>A list item with a code block:</p>
+<pre><code>&lt;code goes here&gt;</code></pre></li>
+</ul>
+<p>It’s worth noting that it’s possible to trigger an ordered list by accident, by writing something like this:</p>
+<ol start="1986">
+<li>What a great season.</li>
+</ol>
+<p>In other words, a number-period-space sequence at the beginning of a line. To avoid this, you can backslash-escape the period:</p>
+<p>1986. What a great season.</p>
+<p>Code Blocks</p>
+<p>Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both <pre> and <code> tags.</code></pre></p>
+<p>To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab. For example, given this input:</p>
+<p>This is a normal paragraph:</p>
+<pre><code>This is a code block.</code></pre><p>Markdown will generate:</p>
+<p>This is a normal paragraph:</p>
+
+<pre><code>This is a code block.
+</code></pre>
+
+<p>One level of indentation — 4 spaces or 1 tab — is removed from each line of the code block. For example, this:</p>
+<p>Here is an example of AppleScript:</p>
+<pre><code>tell application &quot;Foo&quot;
+    beep
+end tell</code></pre><p>will turn into:</p>
+<p>Here is an example of AppleScript:</p>
+
+<pre><code>tell application "Foo"
+    beep
+end tell
+</code></pre>
+
+<p>A code block continues until it reaches a line that is not indented (or the end of the article).</p>
+<p>Within a code block, ampersands (&) and angle brackets (< and >) are automatically converted into HTML entities. This makes it very easy to include example HTML source code using Markdown — just paste it and indent it, and Markdown will handle the hassle of encoding the ampersands and angle brackets. For example, this:</p>
+<pre><code>&lt;div class=&quot;footer&quot;&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;</code></pre><p>will turn into:</p>
+<pre><code>&lt;div class="footer"&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;
+</code></pre>
+
+<p>Regular Markdown syntax is not processed within code blocks. E.g., asterisks are just literal asterisks within a code block. This means it’s also easy to use Markdown to write about Markdown’s own syntax.<br>Horizontal Rules</p>
+<p>You can produce a horizontal rule tag (<hr>) by placing three or more hyphens, asterisks, or underscores on a line by themselves. If you wish, you may use spaces between the hyphens or asterisks. Each of the following lines will produce a horizontal rule:</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>Span Elements<br>Links</p>
+<p>Markdown supports two style of links: inline and reference.</p>
+<p>In both styles, the link text is delimited by [square brackets].</p>
+<p>To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:</p>
+<p>This is <a href="http://example.com/" title="Title" target="_blank" rel="noopener">an example</a> inline link.</p>
+<p><a href="http://example.net/" target="_blank" rel="noopener">This link</a> has no title attribute.</p>
+<p>Will produce:</p>
+<p>This is <a href="http://example.com/" title="Title" target="_blank" rel="noopener">
+an example</a> inline link.</p>
+
+<p><a href="http://example.net/" target="_blank" rel="noopener">This link</a> has no
+title attribute.</p>
+
+<p>If you’re referring to a local resource on the same server, you can use relative paths:</p>
+<p>See my <a href="/about/">About</a> page for details.   </p>
+<p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:</p>
+<p>This is <a href="//hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658" title="Title">an example</a> reference-style link.</p>
+<p>You can optionally use a space to separate the sets of brackets:</p>
+<p>This is [an example] <a href="//hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658" title="Title">id</a> reference-style link.</p>
+<p>Then, anywhere in the document, you define your link label like this, on a line by itself:</p>
+<p>That is:</p>
+<pre><code>Square brackets containing the link identifier (optionally indented from the left margin using up to three spaces);
+followed by a colon;
+followed by one or more spaces (or tabs);
+followed by the URL for the link;
+optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.</code></pre><p>The following three link definitions are equivalent:</p>
+<p>Note: There is a known bug in Markdown.pl 1.0.1 which prevents single quotes from being used to delimit link titles.</p>
+<p>The link URL may, optionally, be surrounded by angle brackets:</p>
+<p>You can put the title attribute on the next line and use extra spaces or tabs for padding, which tends to look better with longer URLs:</p>
+<p>Link definitions are only used for creating links during Markdown processing, and are stripped from your document in the HTML output.</p>
+<p>Link definition names may consist of letters, numbers, spaces, and punctuation — but they are not case sensitive. E.g. these two links:</p>
+<p>[link text][a]<br>[link text][A]</p>
+<p>are equivalent.</p>
+<p>The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:</p>
+<p><a href="http://google.com/" target="_blank" rel="noopener">Google</a></p>
+<p>And then define the link:</p>
+<p>Because link names may contain spaces, this shortcut even works for multiple words in the link text:</p>
+<p>Visit <a href="http://daringfireball.net/" target="_blank" rel="noopener">Daring Fireball</a> for more information.</p>
+<p>And then define the link:</p>
+<p>Link definitions can be placed anywhere in your Markdown document. I tend to put them immediately after each paragraph in which they’re used, but if you want, you can put them all at the end of your document, sort of like footnotes.</p>
+<p>Here’s an example of reference links in action:</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" target="_blank" rel="noopener">Google</a> <a href="http://google.com/" title="Google" target="_blank" rel="noopener">1</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a> <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">2</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a> <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">3</a>.</p>
+<p>Using the implicit link name shortcut, you could instead write:</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" target="_blank" rel="noopener">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a>.</p>
+<p>Both of the above examples will produce the following HTML output:</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="noopener">Google</a> than from
+<a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a>
+or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a>.</p>
+
+<p>For comparison, here is the same paragraph written using Markdown’s inline link style:</p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="noopener">Google</a><br>than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a> or<br><a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a>.</p>
+<p>The point of reference-style links is not that they’re easier to write. The point is that with reference-style links, your document source is vastly more readable. Compare the above examples: using reference-style links, the paragraph itself is only 81 characters long; with inline-style links, it’s 176 characters; and as raw HTML, it’s 234 characters. In the raw HTML, there’s more markup than there is text.</p>
+<p>With Markdown’s reference-style links, a source document much more closely resembles the final output, as rendered in a browser. By allowing you to move the markup-related metadata out of the paragraph, you can add links without interrupting the narrative flow of your prose.<br>Emphasis</p>
+<p>Markdown treats asterisks (*) and underscores (_) as indicators of emphasis. Text wrapped with one * or _ will be wrapped with an HTML <em> tag; double *’s or _’s will be wrapped with an HTML <strong> tag. E.g., this input:</strong></em></p>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+<p>will produce:</p>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+<p>You can use whichever style you prefer; the lone restriction is that the same character must be used to open and close an emphasis span.</p>
+<p>Emphasis can be used in the middle of a word:</p>
+<p>un<em>frigging</em>believable</p>
+<p>But if you surround an * or _ with spaces, it’ll be treated as a literal asterisk or underscore.</p>
+<p>To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:</p>
+<p>*this text is surrounded by literal asterisks*</p>
+<p>Code</p>
+<p>To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:</p>
+<p>Use the <code>printf()</code> function.</p>
+<p>will produce:</p>
+<p>Use the <code>printf()</code> function.</p>
+
+<p>To include a literal backtick character within a code span, you can use multiple backticks as the opening and closing delimiters:</p>
+<p><code>There is a literal backtick (`) here.</code></p>
+<p>which will produce this:</p>
+<p><code>There is a literal backtick (`) here.</code></p>
+
+<p>The backtick delimiters surrounding a code span may include spaces — one after the opening, one before the closing. This allows you to place literal backtick characters at the beginning or end of a code span:</p>
+<p>A single backtick in a code span: <code>`</code></p>
+<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
+<p>will produce:</p>
+<p>A single backtick in a code span: <code>`</code></p>
+
+<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
+
+<p>With a code span, ampersands and angle brackets are encoded as HTML entities automatically, which makes it easy to include example HTML tags. Markdown will turn this:</p>
+<p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
+<p>into:</p>
+<p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
+
+<p>You can write this:</p>
+<p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>
+<p>to produce:</p>
+<p><code>&amp;#8212;</code> is the decimal-encoded
+equivalent of <code>&amp;mdash;</code>.</p>
+
+<p>Images</p>
+<p>Admittedly, it’s fairly difficult to devise a “natural” syntax for placing images into a plain text document format.</p>
+<p>Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.</p>
+<p>Inline image syntax looks like this:</p>
+<p><img src="/path/to/img.jpg" alt="Alt text"></p>
+<p><img src="/path/to/img.jpg" alt="Alt text" title="Optional title"></p>
+<p>That is:</p>
+<pre><code>An exclamation mark: !;
+followed by a set of square brackets, containing the alt attribute text for the image;
+followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclosed in double or single quotes.</code></pre><p>Reference-style image syntax looks like this:</p>
+<p><img src="//hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658" alt="Alt text" title="Title"></p>
+<p>Where “id” is the name of a defined image reference. Image references are defined using syntax identical to link references:</p>
+<p>As of this writing, Markdown has no syntax for specifying the dimensions of an image; if this is important to you, you can simply use regular HTML <img> tags.<br>Miscellaneous<br>Automatic Links</p>
+<p>Markdown supports a shortcut style for creating “automatic” links for URLs and email addresses: simply surround the URL or email address with angle brackets. What this means is that if you want to show the actual text of a URL or email address, and also have it be a clickable link, you can do this:</p>
+<p><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a></p>
+<p>Markdown will turn this into:</p>
+<p><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a></p>
+<p>Automatic links for email addresses work similarly, except that Markdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots. For example, Markdown will turn this:</p>
+<p><a href="mailto:&#x61;&#x64;&#100;&#x72;&#101;&#115;&#x73;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;" target="_blank" rel="noopener">&#x61;&#x64;&#100;&#x72;&#101;&#115;&#x73;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>into something like this:</p>
+<p><a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
+&#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
+&#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;<br>&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;&#109;</a></p>
+<p>which will render in a browser as a clickable link to “<a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>”.</p>
+<p>(This sort of entity-encoding trick will indeed fool many, if not most, address-harvesting bots, but it definitely won’t fool all of them. It’s better than nothing, but an address published in this way will probably eventually start receiving spam.)<br>Backslash Escapes</p>
+<p>Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax. For example, if you wanted to surround a word with literal asterisks (instead of an HTML <em> tag), you can use backslashes before the asterisks, like this:</em></p>
+<p>*literal asterisks*</p>
+<p>Markdown provides backslash escapes for the following characters:</p>
+<p>\   backslash<br>`   backtick</p>
+<ul>
+<li>asterisk<br>_   underscore<br>{}  curly braces<br>[]  square brackets<br>()  parentheses<h1 id="hash-mark"><a href="#hash-mark" class="headerlink" title="hash mark"></a>hash mark</h1></li>
+</ul>
+<ul>
+<li>plus sign</li>
+</ul>
+<ul>
+<li>minus sign (hyphen)<br>.   dot<br>!   exclamation mark<figure class="highlight js"><figcaption><span>md javascript</span><a href="/downloads/code/md.js">view raw</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cp=<span class="function"><span class="params">x</span>=&gt;</span><span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(x))</span><br><span class="line"><span class="keyword">const</span> head=<span class="function">(<span class="params">o=[]</span>)=&gt;</span><span class="built_in">Object</span>.keys(o[<span class="number">0</span>])</span><br><span class="line"><span class="keyword">const</span> sep=<span class="function">(<span class="params">o=[]</span>)=&gt;</span><span class="built_in">Object</span>.keys(o[<span class="number">0</span>]).fill(<span class="string">"-"</span>)</span><br><span class="line"><span class="keyword">const</span> chunk=<span class="function">(<span class="params">c=[],cols=<span class="number">4</span></span>)=&gt;</span>c.map(<span class="function">(<span class="params">x,y,z</span>)=&gt;</span>y%cols==<span class="number">0</span> ? z.slice(y,y+cols):<span class="literal">null</span>).filter(<span class="function"><span class="params">x</span>=&gt;</span>x)</span><br><span class="line"><span class="keyword">const</span> arr2md=<span class="function">(<span class="params">c=[],cols=<span class="number">4</span></span>)=&gt;</span>{</span><br><span class="line">   <span class="keyword">let</span> d=chunk(c,cols)</span><br><span class="line">   <span class="keyword">return</span> [head(d),sep(d),...d]</span><br><span class="line">          .map(<span class="function"><span class="params">x</span>=&gt;</span>x.join(<span class="string">'|'</span>))</span><br><span class="line">          .join(<span class="string">'\n'</span>)</span><br><span class="line">}</span><br><span class="line"><span class="keyword">const</span> json2md=<span class="function">(<span class="params">o=[],</span>)=&gt;</span>{</span><br><span class="line">    d=o.map(<span class="function"><span class="params">x</span>=&gt;</span><span class="built_in">Object</span>.values(x))</span><br><span class="line">    <span class="keyword">return</span> [head(o),sep(o),...d].map(<span class="function"><span class="params">x</span>=&gt;</span>x.join(<span class="string">"|"</span>)).join(<span class="string">"\n"</span>)</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">name | 价格 |  数量  </span><br><span class="line">-|-|-</span><br><span class="line">香蕉 | $1 | 5 |</span><br><span class="line">苹果 | $1 | 6 |</span><br><span class="line">草莓 | $1 | 7 |</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">name | 111 | 222 | 333 | 444</span><br><span class="line"><span class="bullet">- </span>| :-: | :-: | :-: | -:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | 000|</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">name | 111 | 222 | 333 | 444</span><br><span class="line">:-: | :-: | :-: | :-: | :-:</span><br><span class="line">aaa | bbb | ccc | ddd | eee|</span><br><span class="line">fff | ggg| hhh | iii | 000|</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>价格</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>香蕉</td>
+<td>$1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>苹果</td>
+<td>$1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>草莓</td>
+<td>$1</td>
+<td>7</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th align="center">111</th>
+<th align="center">222</th>
+<th align="center">333</th>
+<th align="right">444</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>aaa</td>
+<td align="center">bbb</td>
+<td align="center">ccc</td>
+<td align="center">ddd</td>
+<td align="right">eee</td>
+</tr>
+<tr>
+<td>fff</td>
+<td align="center">ggg</td>
+<td align="center">hhh</td>
+<td align="center">iii</td>
+<td align="right">000</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">name</th>
+<th align="center">111</th>
+<th align="center">222</th>
+<th align="center">333</th>
+<th align="center">444</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">aaa</td>
+<td align="center">bbb</td>
+<td align="center">ccc</td>
+<td align="center">ddd</td>
+<td align="center">eee</td>
+</tr>
+<tr>
+<td align="center">fff</td>
+<td align="center">ggg</td>
+<td align="center">hhh</td>
+<td align="center">iii</td>
+<td align="center">000</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+<th>d</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://hbimg.huabanimg.com/22e6cc7f428aa5a1fd44805d6c6568232b3cfef310d07-uEBjFQ_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/15e3752862027f48dac9dde28773060c66b56a8f26c6a-cX0s76_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/50bbcda6600c2e145b96af5c8c19f0692e3654ec2569f-O9uud7_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/db21f9e43f26bce3939bcb7505650e0fa341d3662ca4d-QNoWzk_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/8e1c4b029f493f8da42de4b87aa12e4340a1526b2a211-HLYrMM_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/1a0ff41a1df01347476e7bf4f751726506977a4026c4c-u5JrzF_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/1405cd5420993e491c729ff0554658a117f810499a8d1-FuDiPF_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/57865414bc230edddb4797bd51fa94ce2afbeaeceea83-tE0MND_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/f1cb60eb3c94321b12c0cade91aea44d002ba05bcca73-dy4eWz_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/cbcf54521192c068a0b4baf1918f759816cddd4f1f38e-vsVdLg_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/6f703b7f3ea5e0db7e059657a5aa68062c1bd5804b6b9-3EXWLZ_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/ac860d8af5b68e57d585a4ed1cf8ac2c47b565ce80d78-uUFdz7_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/0e26c4e4722eb667cdfdd86412b28a38d486e3a3dcc8f-jfT2lp_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/d1b0b464d2eff0c778b75b24aabae81e8bf13f4faaaee-WYMNd3_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/49dde27b9b57092af600fb5edd19725a42b300f81a2b5-1QzaMC_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/a9989bebbbecb032f986d4bd648b4a8449828bdd21bac-yqE2A5_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/52f9f833d8d89514ba5d2f1e0ec74282bbc5eb6a40ab4-7ppc1F_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/0fa664deef2a3ce1bb48e5c21f95951df81858d51fd13-L2n8ZS_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/0076f604eac7be832a8b0f2c485f77b5269a64502db5c-x5zLdJ_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/f0595ba0375d377ecb19317b87e1a3426f91ad4f1e2510-jAbn1J_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/67f653e4c6e4545ac83c6dd8f1d24293e593b9d522d4b-kWoW5J_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/4b4ce3c1d8cebd16404367e3e3d684a690e77f50500d9-mhG1OY_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/0b4c81a15e4f46e9724cd58b702713836aef2c154aae5-eMirA7_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/0ebd48d8f1e8f223582929376d272ce59ee20e0a3a671-J0HPic_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/6695f7c4e27ec84b49f47517a15c1fa5f0d9f6022cab2-t0lRuy_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/2404965481c26c0d479bb5c2291b0c1b1d803957118908-8Lvumv_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/d4a604d2d2109de520d52e5fe84847a9edeb4cbf26f69-7QZmGA_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/caa5fba632ef0a90ca4d1bfb4971aa0c6bbb6dbb14ce7-pYIkWP_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/47602f760861c73e9cfec49ef64edb44290ecb7526b63-19OqQ8_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/831c20835a8e3327f18e3e2dc7a9d4560a3e287a281ab-B78Y2J_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/5a0867a0dbfb8b1565fb3e7b0301eb325051ad0b1517dd-X2AF3d_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/5913ed792e6d24956f0d47263f83ba6646e4f2629a572-ue3YUk_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/898f4f5996d5e3d462deeadfae8477d9f564d4a01be125-WLYOdo_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/c453d4e240b595cfd26e74c014eaab32b52343942d886-duhwUY_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/aa0d528c729000d93a614a79e8e60f30d6838bc11c187-tDcHUA_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/89e8cc038486ed15ea4f85d6bc50f849de832906342bc-yD9u6U_fw658" alt></td>
+</tr>
+<tr>
+<td><img src="https://hbimg.huabanimg.com/a80810e3695f095622fc8e3b3f4edb0676d1ff0021412e-w8nrvV_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/1f2c862089f8580abd93fb7e85fef540d3c74f0e6b718-usuX0U_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/e403b041ab21a38d23b95efb6f434d718eeab370130b8-cS8PWO_fw658" alt></td>
+<td><img src="https://hbimg.huabanimg.com/e2357c763ead0051951d470e80ba2c1bfc21327226b77-2NvRYf_fw658" alt></td>
+</tr>
+</tbody></table>
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote>
+
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;Hello World!&apos;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.map(callback[, thisArg])</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="noopener">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_.compact([0, 1, false, 2, &apos;&apos;, 3]);</span><br><span class="line">=&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure>
+
+<blockquote class="pullquote"><p>pullquote</p>
+</blockquote>
+
+
+raw
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a id="more"></a>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<img src="https://hbimg.huabanimg.com/cbf6c8a0e9e4ccf29e7469b26d203ed5d80f49073d585-ooshmN_fw658">
+<a href="https://www.bootcdn.cn/" target="_blank" rel="noopener">bootcdn</a>
+
+<iframe src="https://hexo.io/docs/tag-plugins" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+
+/2020/01/10/hello-world/
+
+<hr>
+<a href="/2020/01/10/hello-world/" title="Hello World">Hello World</a>
+
+
+
+<p><img src="/images/1.jpg" alt></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://birdsofsummer.github.io/2019/07/11/My-New-Post/" data-id="ck580fksl002u81mcub1f9b4c" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/07/11/color/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          color
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/async/">async</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/">db</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/db/mongo/">mongo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/redis/">redis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/design/color/">color</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/task/">task</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/async/">async</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/callback/">callback</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/color/">color</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddd/">ddd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graphql/">graphql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/promise/">promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redis/">redis</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/async/" style="font-size: 10px;">async</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/color/" style="font-size: 10px;">color</a> <a href="/tags/ddd/" style="font-size: 10px;">ddd</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/graphql/" style="font-size: 10px;">graphql</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 20px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/zz/">zz</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/tttt/">tttt</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/github-action/">github-action</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/erl/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Qing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

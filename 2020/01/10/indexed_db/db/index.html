@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <!--base target="_blank" /-->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="referrer" content="never">
+  <meta name="keywords" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/346/346195.png" type="image/x-icon">
+
+
+  <link href="https://spin.js.org/spin.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+<link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.css" rel="stylesheet">
+  <link href="/css/grid.css" type="text/css" rel="stylesheet">
+  <link href="/css/blog.css" type="text/css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdn.bootcss.com/localforage/1.7.3/localforage.min.js"></script>
+  <script src="https://cdn.bootcss.com/ramda/0.26.1/ramda.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.16.1/lodash.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.bootcss.com/superagent/4.1.0-beta.1/superagent.min.js"></script>
+  <script src="https://cdn.bootcss.com/rxjs/6.5.2/rxjs.umd.min.js"></script>
+  <script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="https://cdn.bootcss.com/vuetify/2.0.0-beta.3/vuetify.js"></script>
+  
+  <script src="https://cdn.bootcss.com/pixi.js/5.0.4/pixi.min.js"></script>
+  <script src="https://cdn.bootcss.com/d3/5.9.7/d3.min.js"></script>
+  <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+  <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+  <script src="https://cdn.bootcss.com/push.js/1.0.9/push.min.js"></script>
+  <script src="https://cdn.bootcss.com/linq.js/2.2.0.2/linq.min.js"></script>
+  <script src="https://cdn.bootcss.com/tensorflow/1.2.2/tf.min.js"></script>
+  <script src="https://cdn.bootcss.com/typescript/3.5.3/typescript.min.js"></script>
+  <script src="https://cdn.bootcss.com/reflect-metadata/0.1.13/Reflect.min.js"></script>
+  <script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.dev.js"></script>
+  <script src="https://cdn.bootcss.com/immutable/4.0.0-rc.12/immutable.min.js"></script>
+  <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.common.min.js"></script>
+  <script src="/js/blog.js" type="module"></script>
+
+
+  <!--%- partial('google-analytics') %-->
+  
+  <title>blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="say=(x=&quot;&quot;)=&amp;gt;(y=&quot;&quot;)=&amp;gt;console.log(x,y)  var db;   window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB; window.IDBTransaction = window.IDBTransactio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blog">
+<meta property="og:url" content="https://birdsofsummer.github.io/2020/01/10/indexed_db/db/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="say=(x=&quot;&quot;)=&amp;gt;(y=&quot;&quot;)=&amp;gt;console.log(x,y)  var db;   window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB; window.IDBTransaction = window.IDBTransactio">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-01-10T10:20:08.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blog">
+<meta name="twitter:description" content="say=(x=&quot;&quot;)=&amp;gt;(y=&quot;&quot;)=&amp;gt;console.log(x,y)  var db;   window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB; window.IDBTransaction = window.IDBTransactio">
+  
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <!--link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"-->
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://birdsofsummer.github.io"></form>
+      </div>
+    </div>
+  </div>
+  <section class="loading"><section>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-indexed_db/db" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/10/indexed_db/db/" class="article-date">
+  <time datetime="2020-01-10T10:20:08.385Z" itemprop="datePublished">2020-01-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        say=(x="")=>(y="")=>console.log(x,y)
+
+var db;
+
+
+window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
+window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
+
+
+var DBOpenRequest = window.indexedDB.open("toDoList", 4);
+// var request = window.indexedDB.open("toDoList", {version: 4, storage: "temporary"});
+DBOpenRequest.onerror = say('db open err')
+DBOpenRequest.onsuccess = function(event) {
+    db = DBOpenRequest.result;
+    displayData();
+};
+
+DBOpenRequest.onupgradeneeded = function(event) {
+    var db = event.target.result;
+    db.onerror = say('db')
+    var objectStore = db.createObjectStore("toDoList", { keyPath: "taskTitle" });
+    objectStore.createIndex("hours", "hours", { unique: false });
+    objectStore.createIndex("minutes", "minutes", { unique: false });
+    objectStore.createIndex("day", "day", { unique: false });
+    objectStore.createIndex("month", "month", { unique: false });
+    objectStore.createIndex("year", "year", { unique: false });
+    objectStore.createIndex("notified", "notified", { unique: false });
+};
+
+function displayData() {
+var objectStore = db.transaction('toDoList').objectStore('toDoList');
+objectStore.openCursor().onsuccess = function(event) {
+  var cursor = event.target.result;
+console.log(cursor)
+    //  cursor.value.day
+    if(cursor) {
+      var listItem = document.createElement('li');
+
+      deleteButton.onclick = function(event) {
+        deleteItem(event);
+      }
+      cursor.continue();
+    } else {
+    }
+  }
+}
+
+taskForm.addEventListener('submit',addData,false);
+
+function addData(e) {
+e.preventDefault();
+
+if(title.value == '' || hours.value == null || minutes.value == null || day.value == '' || month.value == '' || year.value == null) {
+  note.innerHTML += '<li>Data not submitted — form incomplete.</li>';
+  return;
+} else {
+  var newItem = [
+        { taskTitle: title.value, hours: hours.value, minutes: minutes.value, day: day.value, month: month.value, year: year.value, notified: "no" }
+  ];
+  var transaction = db.transaction(["toDoList"], "readwrite");
+
+  transaction.oncomplete = function() {
+        displayData();
+  };
+
+  transaction.onerror =say(transaction.error)
+
+  var objectStore = transaction.objectStore("toDoList");
+  let { indexNames, keyPath, name, transaction, autoIncrement, }= objectStore
+    var newItem = [
+      { taskTitle: "", hours: 0, minutes: 0, day: 0, month: "", year: 0, notified: "no" }
+    ];
+  var objectStoreRequest = objectStore.add(newItem[0]);
+    objectStoreRequest.onsuccess = say('ok')
+
+  };
+
+};
+
+function deleteItem(event) {
+// retrieve the name of the task we want to delete
+var dataTask = event.target.getAttribute('data-task');
+
+// open a database transaction and delete the task, finding it by the name we retrieved above
+var transaction = db.transaction(["toDoList"], "readwrite");
+var request = transaction.objectStore("toDoList").delete(dataTask);
+
+// report that the data item has been deleted
+transaction.oncomplete = function() {
+  // delete the parent of the button, which is the list item, so it no longer is displayed
+  event.target.parentNode.parentNode.removeChild(event.target.parentNode);
+  note.innerHTML += '<li>Task \"' + dataTask + '\" deleted.</li>';
+};
+};
+
+function checkDeadlines() {
+
+var objectStore = db.transaction(['toDoList'], "readwrite").objectStore('toDoList');
+objectStore.openCursor().onsuccess = function(event) {
+  var cursor = event.target.result;
+
+}
+
+}
+
+function createNotification(title) {
+if (Notification.permission === "granted") {
+      var img = '/to-do-notifications/img/icon-128.png';
+      var text = 'HEY! Your task "' + title + '" is now overdue.';
+      var notification = new Notification('To do list', { body: text, icon: img });
+      window.navigator.vibrate(500);
+}
+else if (Notification.permission !== 'denied') {
+      Notification.requestPermission(function (permission) {
+        if(!('permission' in Notification)) {
+          Notification.permission = permission;
+        }
+        if (permission === "granted") {
+          var img = '/to-do-notifications/img/icon-128.png';
+          var text = 'HEY! Your task "' + title + '" is now overdue.';
+          var notification = new Notification('To do list', { body: text, icon: img });
+
+          window.navigator.vibrate(500);
+        }
+      });
+}
+
+var objectStore = db.transaction(['toDoList'], "readwrite").objectStore('toDoList');
+var objectStoreTitleRequest = objectStore.get(title);
+objectStoreTitleRequest.onsuccess = function() {
+      var data = objectStoreTitleRequest.result;
+      data.notified = "yes";
+      var updateTitleRequest = objectStore.put(data);
+      updateTitleRequest.onsuccess = displayData
+}
+}
+
+setInterval(checkDeadlines, 1000);
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://birdsofsummer.github.io/2020/01/10/indexed_db/db/" data-id="ck580fkrf001s81mctm2s61z1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/01/10/redis/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          nodejs Redis
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/10/indexed_db/lib/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/async/">async</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/">db</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/db/mongo/">mongo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/db/redis/">redis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/design/color/">color</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/task/">task</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/async/">async</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/callback/">callback</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/color/">color</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddd/">ddd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graphql/">graphql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/promise/">promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redis/">redis</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/async/" style="font-size: 10px;">async</a> <a href="/tags/callback/" style="font-size: 10px;">callback</a> <a href="/tags/color/" style="font-size: 10px;">color</a> <a href="/tags/ddd/" style="font-size: 10px;">ddd</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/graphql/" style="font-size: 10px;">graphql</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 20px;">nodejs</a> <a href="/tags/promise/" style="font-size: 10px;">promise</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/zz/">zz</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/tttt/">tttt</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/github-action/">github-action</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/erl/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Qing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
