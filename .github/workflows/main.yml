@@ -11,6 +11,7 @@ jobs:
     - name: Checkout
       run: |
         echo 123
+        mkdir public
 
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master 
